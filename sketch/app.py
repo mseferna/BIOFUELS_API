@@ -56,7 +56,7 @@ def get_config(log):
     try:
         response = requests.get('http://localhost:5557/get_config/', headers=JSON_HEADERS, timeout=5)
         if response.status_code == 200 and response.content != None:
-            log.debug(f'Got config - {response}')
+            log.debug(f'Got config - {response.content}')
             return json.loads(response.content) 
         else:
             log.warning(f'Config is empty!!!')  
@@ -109,7 +109,7 @@ def check_for_diff(log):
 def get_session_id(log):
     try:
         response = requests.post('http://localhost:5557/so_login/', json={"user": "HOCOMM", "password": "123456"}, headers=JSON_HEADERS, timeout=5)
-        log.debug(f'{response}')
+        log.debug(f'{response.content}')
         return json.loads(response.content)
 
     except Exception as e:
