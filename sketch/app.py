@@ -118,7 +118,7 @@ def get_session_id(log):
 
 def fetch_so_get_pump_quantity(log):
     try:
-        response = requests.get('http://localhost:5557/so_get_pump_quantity/', json={"session_id": get_session_id(log)["SessionID"], "site_code": 0 }, headers=JSON_HEADERS, timeout=5)
+        response = requests.post('http://localhost:5557/so_get_pump_quantity/', json={"session_id": get_session_id(log)["SessionID"], "site_code": 0 }, headers=JSON_HEADERS, timeout=5)
         log.debug(f'{json.loads(response.content)}')
         return json.loads(response.content) 
 
