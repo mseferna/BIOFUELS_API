@@ -20,6 +20,7 @@ from entities.SOGetPumpStatus import SOGetPumpStatus
 from entities.SOSimple import SOSimple
 from entities.PumpAlarm import PumpAlarm
 import xmltodict
+from typing import List
 
 from urllib3.exceptions import InsecureRequestWarning
 requests.packages.urllib3.disable_warnings(category=InsecureRequestWarning)
@@ -389,7 +390,7 @@ async def check_for_differences_on_standby_tanks():
 
     return ORJSONResponse({"response": "No stand by tanks"})
 
-@app.get("/get_tank/all/", response_class=ORJSONResponse, status_code=200, response_model=list[Tank])
+@app.get("/get_tank/all/", response_class=ORJSONResponse, status_code=200, response_model=List[Tank])
 async def get_tank_all():
     cur = con.cursor()
     result = cur.execute('SELECT id, number, product_name, probe_number, capacity, monitoring, threshold, created FROM tank ORDER BY number ASC')
