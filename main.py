@@ -158,7 +158,7 @@ async def calculate_accum_inventoriy_diff(initial_volume, last_volume):
     return float(initial_volume) - float(last_volume)
 
 @app.post("/so_login/", response_class=ORJSONResponse, status_code=200)
-async def so_login(data: SOLogin, so_url='192.168.1.104'):
+async def so_login(data: SOLogin, so_url='10.28.139.140'):
     xml = f'''
         <?xml version="1.0" encoding="utf-8"?>
         <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
