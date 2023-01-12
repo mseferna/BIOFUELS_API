@@ -34,6 +34,7 @@ def read_root(): return {"response": "HelloWorld"}
 
 @app.get("/relay/{state}/", response_class=ORJSONResponse, status_code=200)
 async def relay_state(state: str):
+    print("test:", {state} )
     cur = con.cursor()
     result = cur.execute('SELECT max(id), host, user, password FROM router_params')  
     for data in result:
