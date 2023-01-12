@@ -54,7 +54,7 @@ def set_log_rotate():
 
 def get_config(log):
     try:
-        response = requests.get('http://localhost:8000/get_config/', headers=JSON_HEADERS, timeout=5)
+        response = requests.get('http://localhost:5557/get_config/', headers=JSON_HEADERS, timeout=5)
         if response.status_code == 200 and response.content != None:
             log.debug(f'Got config - {response}')
             return json.loads(response.content) 
@@ -66,7 +66,7 @@ def get_config(log):
 
 def get_probe_definition(log):
     try:
-        response = requests.get('http://localhost:8000/get_tank/all/', headers=JSON_HEADERS, timeout=5)
+        response = requests.get('http://localhost:5557/get_tank/all/', headers=JSON_HEADERS, timeout=5)
         if response.status_code == 200:
             log.debug(f'Got Probe definition - {json.loads(response.content)}') 
             return json.loads(response.content)   
@@ -77,7 +77,7 @@ def get_probe_definition(log):
 
 def insert_in_db(data):
     try:
-        response = requests.post('http://localhost:8000/new_inventory/', json=data, headers=JSON_HEADERS, timeout=5)
+        response = requests.post('http://localhost:5557/new_inventory/', json=data, headers=JSON_HEADERS, timeout=5)
         if response.status_code == 201: log.debug(f'Inserting into DB - {json.loads(response.content)}') 
 
     except Exception as e:
@@ -89,7 +89,7 @@ def check_db_size(log):
     Ejecuta tarea para verificar si la BD tiene mas de > 15000 registros, en ese caso debe borrar los primeros 100 registros.
     """
     try:
-        response = requests.get('http://localhost:8000/clean_inventories/', headers=JSON_HEADERS, timeout=5)
+        response = requests.get('http://localhost:5557/clean_inventories/', headers=JSON_HEADERS, timeout=5)
         if response.status_code == 200: log.debug(f'Checking DB Size: {json.loads(response.content)}') 
 
     except Exception as e:
@@ -98,7 +98,7 @@ def check_db_size(log):
 def check_for_diff(log):
     while True:
         try:
-            response = requests.get('http://localhost:8000/calculateDiffonAllTanksByAccumulatedStock/', headers=JSON_HEADERS, timeout=5)
+            response = requests.get('http://localhost:5557/calculateDiffonAllTanksByAccumulatedStock/', headers=JSON_HEADERS, timeout=5)
             log.debug(f'{json.loads(response.content)}') 
 
         except Exception as e:
@@ -108,7 +108,7 @@ def check_for_diff(log):
 
 def get_session_id(log):
     try:
-        response = requests.post('http://localhost:8000/so_login/', json={"user": "HOCOMM", "password": "123456"}, headers=JSON_HEADERS, timeout=5)
+        response = requests.post('http://localhost:5557/so_login/', json={"user": "HOCOMM", "password": "123456"}, headers=JSON_HEADERS, timeout=5)
         log.debug(f'{response}')
         return json.loads(response.content)
 
@@ -118,7 +118,7 @@ def get_session_id(log):
 
 def fetch_so_get_pump_quantity(log):
     try:
-        response = requests.get('http://localhost:8000/so_get_pump_quantity/', json={"session_id": get_session_id(log)["SessionID"], "site_code": 0 }, headers=JSON_HEADERS, timeout=5)
+        response = requests.get('http://localhost:5557/so_get_pump_quantity/', json={"session_id": get_session_id(log)["SessionID"], "site_code": 0 }, headers=JSON_HEADERS, timeout=5)
         log.debug(f'{json.loads(response.content)}')
         return json.loads(response.content) 
 
@@ -130,7 +130,7 @@ def fetch_so_get_pump_status(log):
         try:
             count = fetch_so_get_pump_quantity(log)["quantity"] + 1
             for j in range(1, count):
-                response = requests.post('http://localhost:8000/so_get_pump_status/', json={"session_id": get_session_id(log)["SessionID"], "pump_number": j }, headers=JSON_HEADERS, timeout=5)
+                response = requests.post('http://localhost:5557/so_get_pump_status/', json={"session_id": get_session_id(log)["SessionID"], "pump_number": j }, headers=JSON_HEADERS, timeout=5)
                 log.debug(f'Pump:{j }{json.loads(response.content)}') 
                 data = {
                     "pump_status" : json.loads(response.content)["pump_status"],
@@ -146,7 +146,7 @@ def fetch_so_get_pump_status(log):
 def create_pump_alarm(log, data):
     try:
         print("creando alarm:", data)
-        response = requests.post('http://localhost:8000/insert_pump_alarm/', json={"pump_number": data["pump_number"], "code": data["pump_status"] }, headers=JSON_HEADERS, timeout=5)
+        response = requests.post('http://localhost:5557/insert_pump_alarm/', json={"pump_number": data["pump_number"], "code": data["pump_status"] }, headers=JSON_HEADERS, timeout=5)
         log.debug(f'Pump:{ data["pump_number"] } code:{data["pump_status"]} {json.loads(response.content)}') 
 
     except Exception as e:
@@ -157,11 +157,11 @@ def check_analog_read(log):
     while True:
         time.sleep(3)
         try:
-            response = requests.get('http://localhost:8000/analog_read/', headers=JSON_HEADERS, timeout=5)
+            response = requests.get('http://localhost:5557/analog_read/', headers=JSON_HEADERS, timeout=5)
             #print("analog_read", response.content.decode())
             if response.status_code == 200 and json.loads(response.content)["response"] < 3.0:
                 #log.debug(f'Alarm Shutdown') 
-                requests.get('http://localhost:8000/relay/open/', headers=JSON_HEADERS, timeout=5)   
+                requests.get('http://localhost:5557/relay/open/', headers=JSON_HEADERS, timeout=5)   
             if response.status_code == 500: log.warning("Can't read Analog Signal")
         except Exception as e:
             log.warning(f'{e}')
@@ -171,10 +171,10 @@ def check_pending_alarms():
     while True:
         time.sleep(30)
         try:
-            response = requests.get('http://localhost:8000/get_pending_alarms/', headers=JSON_HEADERS, timeout=5)
+            response = requests.get('http://localhost:5557/get_pending_alarms/', headers=JSON_HEADERS, timeout=5)
             #print("analog_read", response.content.decode())
             if response.status_code == 200 and len(json.loads(response.content)) > 0:
-                requests.get('http://localhost:8000/relay/closed/', headers=JSON_HEADERS, timeout=5)  
+                requests.get('http://localhost:5557/relay/closed/', headers=JSON_HEADERS, timeout=5)  
 
             elif response.status_code == 200 and len(json.loads(response.content)) == 0:
                 log.debug("No pending Alarms")
