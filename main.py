@@ -193,7 +193,7 @@ async def so_get_pump_status(data: SOGetPumpStatus, so_url='192.168.1.104'):
     data = json.dumps(xmltodict.parse(response.content)["soap:Envelope"]["soap:Body"]["SOGetPumpStatusResponse"]["SOGetPumpStatusResult"])
     return json.loads(data)
 
-@app.get("/so_get_pump_quantity/", response_class=ORJSONResponse, status_code=200)
+@app.post("/so_get_pump_quantity/", response_class=ORJSONResponse, status_code=200)
 async def so_get_pump_quantity(data: SOSimple, so_url='192.168.1.104'):
     xml = f'''
         <?xml version="1.0" encoding="utf-8"?>
