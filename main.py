@@ -280,7 +280,7 @@ async def insert_pump_alarm(data: PumpAlarm):
                     VALUES (?, ? ,? ,?)''', (data.pump_number, data.code, 0 , datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
         con.commit()
         cur.close()
-        return await relay_state('open')
+        return await relay_state('closed')
     
 @app.post("/update_pump_alarm/", status_code=202)
 async def update_pump_alarm(data: PumpAlarm):
