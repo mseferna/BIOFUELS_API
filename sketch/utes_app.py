@@ -26,7 +26,7 @@ from concurrent_log_handler import ConcurrentRotatingFileHandler
 from logging import error, getLogger, INFO, DEBUG
 
 JSON_HEADERS = {'content-type': 'application/json'}
-
+API_PORT = 5557
 
 def set_log_rotate():
     """
@@ -57,7 +57,7 @@ def set_log_rotate():
 
 def get_config(log):
     try:
-        response = requests.get('http://localhost:8000/get_config/', headers=JSON_HEADERS, timeout=5)
+        response = requests.get(f'http://localhost:{API_PORT}/get_config/', headers=JSON_HEADERS, timeout=5)
         if response.status_code == 200 and response.content != None:
             log.debug(f'Got config - {json.loads(response.content)}')
             return json.loads(response.content) 
@@ -69,7 +69,7 @@ def get_config(log):
 
 def get_probe_definition(log):
     try:
-        response = requests.get('http://localhost:8000/get_tank/all/', headers=JSON_HEADERS, timeout=5)
+        response = requests.get(f'http://localhost:{API_PORT}/get_tank/all/', headers=JSON_HEADERS, timeout=5)
         if response.status_code == 200:
             log.debug(f'Got Probe definition - {json.loads(response.content)}') 
             return json.loads(response.content) 
@@ -82,7 +82,7 @@ def get_probe_definition(log):
 
 def insert_in_db(data):
     try:
-        response = requests.post('http://localhost:8000/new_inventory/', json=data, headers=JSON_HEADERS, timeout=5)
+        response = requests.post(f'http://localhost:{API_PORT}/new_inventory/', json=data, headers=JSON_HEADERS, timeout=5)
         if response.status_code == 201: log.debug(f'Inserting into DB - {json.loads(response.content)}') 
 
     except Exception as e:
@@ -94,7 +94,7 @@ def check_db_size(log):
     Ejecuta tarea para verificar si la BD tiene mas de > 15000 registros, en ese caso debe borrar los primeros 100 registros.
     """
     try:
-        response = requests.get('http://localhost:8000/clean_inventories/', headers=JSON_HEADERS, timeout=5)
+        response = requests.get(f'http://localhost:{API_PORT}/clean_inventories/', headers=JSON_HEADERS, timeout=5)
         if response.status_code == 200: log.debug(f'Checking DB Size: {json.loads(response.content)}') 
 
     except Exception as e:
@@ -102,7 +102,7 @@ def check_db_size(log):
 
 def check_for_diff(log):
     try:
-        response = requests.post('http://localhost:8000/check_for_differences_on_standby_tanks/', headers=JSON_HEADERS, timeout=5)
+        response = requests.post(f'http://localhost:{API_PORT}/check_for_differences_on_standby_tanks/', headers=JSON_HEADERS, timeout=5)
         if response.status_code == 200:
             log.warning(f'STAND BY - {json.loads(response.content)}') 
             return json.loads(response.content) 
@@ -116,13 +116,13 @@ def check_for_diff(log):
 def check_analog_read(log):
     while True:
         time.sleep(2)
-        response = requests.get('http://localhost:8000/analog_read/', headers=JSON_HEADERS, timeout=5)
+        response = requests.get(f'http://localhost:{API_PORT}/analog_read/', headers=JSON_HEADERS, timeout=5)
         #print("analog_read", response.content.decode())
         if response.status_code == 200 and json.loads(response.content)["response"] == 'Not Found': 
             log.warning("Can't read Analog Signal")
         elif response.status_code == 200 and json.loads(response.content)["response"] < 3.0:
             #log.debug(f'Alarm Shutdown') 
-            requests.get('http://localhost:8000/relay/open/', headers=JSON_HEADERS, timeout=5)   
+            requests.get(f'http://localhost:{API_PORT}/relay/open/', headers=JSON_HEADERS, timeout=5)   
 
 
         else:
@@ -134,10 +134,10 @@ def check_pending_alarms():
     while True:
         time.sleep(30)
         try:
-            response = requests.get('http://localhost:8000/get_pending_alarms/', headers=JSON_HEADERS, timeout=5)
+            response = requests.get(f'http://localhost:{API_PORT}/get_pending_alarms/', headers=JSON_HEADERS, timeout=5)
             #print("analog_read", response.content.decode())
             if response.status_code == 200 and len(json.loads(response.content)) > 0:
-                requests.get('http://localhost:8000/relay/closed/', headers=JSON_HEADERS, timeout=5)  
+                requests.get(f'http://localhost:{API_PORT}/relay/closed/', headers=JSON_HEADERS, timeout=5)  
 
             elif response.status_code == 200 and len(json.loads(response.content)) == 0:
                 log.debug("No pending Alarms")
