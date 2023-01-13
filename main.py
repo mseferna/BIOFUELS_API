@@ -259,7 +259,7 @@ async def get_initial_inventory_since_updated(probe_number):
         return {"id": data[0], "volume": data[1]}
 
 
-def calculate_inventoriy_diff(initial_data, last_data):
+async def calculate_inventoriy_diff(initial_data, last_data):
     '''Substract initial and latest inventory samples'''
     return float(initial_data["volume"]) - float(last_data["volume"])
 
@@ -362,11 +362,11 @@ async def analize_diff(diff, tank):
         else: print("ya hay alarmas activas en tank:", tank["id"])
 
     if diff == 0.0:
-        return ORJSONResponse({"response": "No differences"})    
+        return await ORJSONResponse({"response": "No differences"})    
     
     if diff < 0:
         print("diff es menor a 0")
-        return set_tank_updated_now(tank["id"])
+        return await set_tank_updated_now(tank["id"])
 
 async def set_tank_updated_now(tank_id):
     print("ACTUALIZANDO TANK:", tank_id)
@@ -386,7 +386,7 @@ async def check_for_differences_on_standby_tanks():
             initial_data = await get_initial_inventory_since_updated(tank["probe_number"])
             print(last_data, initial_data)
             if not initial_data["id"] == None:
-                result = calculate_inventoriy_diff(initial_data, last_data)
+                result = await calculate_inventoriy_diff(initial_data, last_data)
                 return await analize_diff(result, tank)
             else:
                 return ORJSONResponse({"response": False})
