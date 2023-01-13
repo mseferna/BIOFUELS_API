@@ -259,9 +259,9 @@ async def get_initial_inventory_since_updated(probe_number):
         return {"id": data[0], "volume": data[1]}
 
 
-async def calculate_inventoriy_diff(initial_data, last_data):
+def calculate_inventoriy_diff(initial_data, last_data):
     '''Substract initial and latest inventory samples'''
-    return await float(initial_data["volume"]) - float(last_data["volume"])
+    return float(initial_data["volume"]) - float(last_data["volume"])
 
 
 async def insert_alarm(data):
