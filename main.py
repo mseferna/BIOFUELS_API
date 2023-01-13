@@ -357,16 +357,28 @@ async def analize_diff(diff, tank):
     if diff >= tank["threshold"]:
         await create_alarm_table()
         pending_alarms_counter = await check_pending_alarm_by_tank_id(tank["id"])
+        if pending_alarms_counter == 0: 
+            await relay_state('closed') 
+            await insert_alarm({**tank, "diff": diff})
+            return {"response": "Relay is closed and alarm inserted"}
 
-        if pending_alarms_counter == 0: await relay_state('closed') and await insert_alarm({**tank, "diff": diff})
-        else: print("ya hay alarmas activas en tank:", tank["id"])
+        else: 
+            return {"response": "Already pending alarms on tank/probe"}
 
+        # if pending_alarms_counter == 0: await relay_state('closed') and await insert_alarm({**tank, "diff": diff})
+        # else: print("ya hay alarmas activas en tank:", tank["id"])
+
+    # if diff == 0.0:
+    #     return ORJSONResponse({"response": "No differences"})    
     if diff == 0.0:
-        return ORJSONResponse({"response": "No differences"})    
+        return {"response": "No differences"}  
     
+    # if diff < 0:
+    #     print("diff es menor a 0")
+    #     return await set_tank_updated_now(tank["id"])
     if diff < 0:
-        print("diff es menor a 0")
-        return await set_tank_updated_now(tank["id"])
+        set_tank_updated_now(tank["id"])
+        return {"response": "Diff is negative (fuel delivery maybe?))"}
 
 async def set_tank_updated_now(tank_id):
     print("ACTUALIZANDO TANK:", tank_id)
@@ -376,21 +388,39 @@ async def set_tank_updated_now(tank_id):
     cur.close()
     return {True}
 
+# @app.post("/check_for_differences_on_standby_tanks/", response_class=ORJSONResponse, status_code=200)
+# async def check_for_differences_on_standby_tanks():
+#     stand_by_tanks = await get_standby_tanks()
+#     if len(stand_by_tanks) > 0:
+#         print("largo de standbytanks", stand_by_tanks)
+#         for tank in stand_by_tanks:
+#             last_data = await get_last_inventory_by_probe_number(tank["probe_number"])
+#             initial_data = await get_initial_inventory_since_updated(tank["probe_number"])
+#             print(last_data, initial_data)
+#             if not initial_data["id"] == None:
+#                 result = await calculate_inventoriy_diff(initial_data, last_data)
+#                 return await analize_diff(result, tank)
+#             else:
+#                 return ORJSONResponse({"response": False})
+
+#     return ORJSONResponse({"response": "No stand by tanks"})
+
 @app.post("/check_for_differences_on_standby_tanks/", response_class=ORJSONResponse, status_code=200)
 async def check_for_differences_on_standby_tanks():
     stand_by_tanks = await get_standby_tanks()
     if len(stand_by_tanks) > 0:
-        print("largo de standbytanks", stand_by_tanks)
+        array_data = []
         for tank in stand_by_tanks:
             last_data = await get_last_inventory_by_probe_number(tank["probe_number"])
             initial_data = await get_initial_inventory_since_updated(tank["probe_number"])
-            print(last_data, initial_data)
             if not initial_data["id"] == None:
                 result = await calculate_inventoriy_diff(initial_data, last_data)
-                return await analize_diff(result, tank)
+                final = await analize_diff(result, tank)
+                array_data.append({**tank, "details": final})
             else:
                 return ORJSONResponse({"response": False})
-
+        print(array_data)        
+        return ORJSONResponse(array_data)
     return ORJSONResponse({"response": "No stand by tanks"})
 
 @app.get("/get_tank/all/", response_class=ORJSONResponse, status_code=200, response_model=List[Tank])
