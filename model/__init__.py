@@ -16,10 +16,8 @@ def create_table(con, table_name, columns):
     return {'result': True}
 
 if __name__ == 'model':
-    print("lala")
     db_path = (os.path.dirname(os.path.realpath(__file__)) + '/DB/data.db').replace('/', '//')
     con = create_db(db_path)
-    print(con)
     create_table(con, 'config', 'id INTEGER PRIMARY KEY AUTOINCREMENT, host TEXT, port INTEGER, deposito_id INTEGER, created TEXT')
     create_table(con, 'inventories', 
                     '''id INTEGER PRIMARY KEY AUTOINCREMENT, 

@@ -252,7 +252,7 @@ async def get_updated_timestamp_from_tank(probe_number):
 async def get_initial_inventory_since_updated(probe_number):
     '''Get inital inventory data from updated timestamp on Tank Table'''
     initial_inventory = await get_updated_timestamp_from_tank(probe_number)
-    print("timwstamp culiao:", initial_inventory)
+    print("timwstamp:", initial_inventory)
     cur = con.cursor()
     result = cur.execute('SELECT MIN(id), volume FROM inventories WHERE probe_number = ? and  timestamp >= ?', (probe_number, initial_inventory["timestamp"]))
     for data in result:
@@ -407,8 +407,8 @@ async def set_tank(data: Tank):
     await create_tank_table()
     print("llega:", data)
     cur = con.cursor()
-    cur.execute('''INSERT INTO tank (number, product_name, probe_number, capacity, monitoring, threshold, created ) 
-                    VALUES (?, ? ,? ,? ,? ,? ,?)''', (data.number,data.product_name, data.probe_number, data.capacity, data.monitoring, data.threshold, data.created))
+    cur.execute('''INSERT INTO tank (number, product_name, probe_number, capacity, monitoring, threshold, created, updated ) 
+                    VALUES (?, ? ,? ,? ,? ,? ,?, ?)''', (data.number,data.product_name, data.probe_number, data.capacity, data.monitoring, data.threshold, data.created, datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
     con.commit()
     cur.close()
     return {'response': True}    
