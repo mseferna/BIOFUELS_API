@@ -386,7 +386,7 @@ async def check_for_differences_on_standby_tanks():
             initial_data = await get_initial_inventory_since_updated(tank["probe_number"])
             print(last_data, initial_data)
             if not initial_data["id"] == None:
-                result = await calculate_inventoriy_diff(initial_data, last_data)
+                result = calculate_inventoriy_diff(initial_data, last_data)
                 return await analize_diff(result, tank)
             else:
                 return ORJSONResponse({"response": False})
