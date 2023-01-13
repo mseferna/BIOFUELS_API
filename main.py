@@ -362,7 +362,7 @@ async def analize_diff(diff, tank):
         else: print("ya hay alarmas activas en tank:", tank["id"])
 
     if diff == 0.0:
-        return await ORJSONResponse({"response": "No differences"})    
+        return ORJSONResponse({"response": "No differences"})    
     
     if diff < 0:
         print("diff es menor a 0")
