@@ -261,7 +261,7 @@ async def get_initial_inventory_since_updated(probe_number):
 
 async def calculate_inventoriy_diff(initial_data, last_data):
     '''Substract initial and latest inventory samples'''
-    return float(initial_data["volume"]) - float(last_data["volume"])
+    return await float(initial_data["volume"]) - float(last_data["volume"])
 
 
 async def insert_alarm(data):
@@ -380,9 +380,11 @@ async def set_tank_updated_now(tank_id):
 async def check_for_differences_on_standby_tanks():
     stand_by_tanks = await get_standby_tanks()
     if len(stand_by_tanks) > 0:
+        print("largo de standbytanks", stand_by_tanks)
         for tank in stand_by_tanks:
             last_data = await get_last_inventory_by_probe_number(tank["probe_number"])
             initial_data = await get_initial_inventory_since_updated(tank["probe_number"])
+            print(last_data, initial_data)
             if not initial_data["id"] == None:
                 result = await calculate_inventoriy_diff(initial_data, last_data)
                 return await analize_diff(result, tank)
