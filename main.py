@@ -267,7 +267,7 @@ async def calculate_inventoriy_diff(initial_data, last_data):
 async def insert_alarm(data):
     print("datos de ALARMA",data)
     cur = con.cursor()
-    cur.execute('''INSERT INTO alarm (pr_number, product_name, diff, acknowledged, created, tank_id ) 
+    cur.execute('''INSERT INTO alarm (probe_number, product_name, diff, acknowledged, created, tank_id ) 
                     VALUES (?, ? ,? ,? ,?, ?)''', (data["probe_number"], data["product_name"], data["diff"], 0 ,datetime.now().strftime('%Y-%m-%d %H:%M:%S'), data["id"]))
     con.commit()
     cur.close()
