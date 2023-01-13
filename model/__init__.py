@@ -40,7 +40,8 @@ create_table('tank',
         capacity REAL,
         monitoring INTEGER,
         threshold REAL,
-        created TEXT
+        created TEXT,
+        updated TEXT
     '''
 )
 create_table('alarm',
