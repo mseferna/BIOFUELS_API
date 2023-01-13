@@ -15,9 +15,7 @@ def create_table(con, table_name, columns):
     cur.close()
     return {'result': True}
 
-print(__name__)
 if __name__ == 'model':
-#con = sqlite3.connect(DB_PATH)
     print("lala")
     db_path = (os.path.dirname(os.path.realpath(__file__)) + '/DB/data.db').replace('/', '//')
     connection = create_db(db_path)
