@@ -18,10 +18,10 @@ def create_table(con, table_name, columns):
 if __name__ == 'model':
     print("lala")
     db_path = (os.path.dirname(os.path.realpath(__file__)) + '/DB/data.db').replace('/', '//')
-    connection = create_db(db_path)
-    print(connection)
-    create_table(connection, 'config', 'id INTEGER PRIMARY KEY AUTOINCREMENT, host TEXT, port INTEGER, deposito_id INTEGER, created TEXT')
-    create_table(connection, 'inventories', 
+    con = create_db(db_path)
+    print(con)
+    create_table(con, 'config', 'id INTEGER PRIMARY KEY AUTOINCREMENT, host TEXT, port INTEGER, deposito_id INTEGER, created TEXT')
+    create_table(con, 'inventories', 
                     '''id INTEGER PRIMARY KEY AUTOINCREMENT, 
                     host TEXT, 
                     req_type TEXT, 
@@ -40,7 +40,7 @@ if __name__ == 'model':
                     timestamp TEXT,
                     sent_to_fon INTEGER DEFAULT 0'''
                 )
-    create_table(connection, 'tank', 
+    create_table(con, 'tank', 
         '''
             id INTEGER PRIMARY KEY AUTOINCREMENT, 
             number INTEGER, 
@@ -53,7 +53,7 @@ if __name__ == 'model':
             updated TEXT
         '''
     )
-    create_table(connection, 'alarm',
+    create_table(con, 'alarm',
         '''
             id INTEGER PRIMARY KEY AUTOINCREMENT, 
             probe_number INTEGER, 
@@ -65,7 +65,7 @@ if __name__ == 'model':
             tank_id INTEGER
         '''
     )
-    create_table(connection, 'pump_alarm',
+    create_table(con, 'pump_alarm',
         '''
             id INTEGER PRIMARY KEY AUTOINCREMENT, 
             pump_number INTEGER, 
