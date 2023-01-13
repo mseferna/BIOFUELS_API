@@ -1,1 +1,4 @@
-model/DB/
+model/DB/data.db
+model/DB/old.data.db
+
+!model/__init__.py
