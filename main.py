@@ -417,8 +417,10 @@ async def check_for_differences_on_standby_tanks():
                 result = await calculate_inventoriy_diff(initial_data, last_data)
                 final = await analize_diff(result, tank)
                 array_data.append({**tank, "details": final})
-            else:
-                return ORJSONResponse({"response": False})
+            #else:
+            
+            #    return ORJSONResponse({"response": False})
+            #    continue
         print(array_data)        
         return ORJSONResponse(array_data)
     return ORJSONResponse({"response": "No stand by tanks"})

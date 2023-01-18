@@ -26415,3 +26415,1132 @@
 2022-12-20 18:56:10.537 DEBUG - <Response [200]>
 2022-12-20 18:56:10.901 DEBUG - Pump:2{'pump_status': '55', 'rc': '0', 'rc_desc': 'Ok'}
 2022-12-20 18:56:10.910 DEBUG - Pump:2 code:55 None
+2023-01-18 16:52:23.111 INFO - ########TlS Reading Logger Started########
+2023-01-18 16:52:23.152 DEBUG - Got config - {'response': False}
+2023-01-18 16:52:53.986 INFO - ########TlS Reading Logger Started########
+2023-01-18 16:52:54.003 DEBUG - Got config - {'response': False}
+2023-01-18 16:58:31.135 INFO - ########TlS Reading Logger Started########
+2023-01-18 16:58:31.153 DEBUG - Got config - {'id': 1, 'host': '192.168.99.75', 'port': 1001, 'depositoId': 2232}
+2023-01-18 16:58:31.154 INFO - Configuration Loaded. Trying to Connect to 192.168.99.75...
+2023-01-18 16:58:31.163 DEBUG - Got Probe definition - [{'id': 1, 'number': 1, 'product_name': 'Diesel', 'probe_number': 1, 'capacity': 22000.0, 'monitoring': 0, 'threshold': 100.0}, {'id': 2, 'number': 2, 'product_name': 'ETANOL', 'probe_number': 2, 'capacity': 22000.0, 'monitoring': 0, 'threshold': 60.0}]
+2023-01-18 16:58:31.164 DEBUG - Connected to: 192.168.99.75:1001
+2023-01-18 16:58:41.171 DEBUG - rcv: {'host': '192.168.99.100', 'req_type': 'i201', 'date': '2023-01-18', 'time': '16:58', 'probe_number': 2, 'volume': 15140.0, 'tc_volume': 15140.0, 'ullage': 6851.0, 'height': 130.0628662109375, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 16:58:41.186 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 16:59:01.143 DEBUG - No pending Alarms
+2023-01-18 16:59:01.196 DEBUG - rcv: {'host': '192.168.99.100', 'req_type': 'i201', 'date': '2023-01-18', 'time': '16:59', 'probe_number': 2, 'volume': 15140.0, 'tc_volume': 15140.0, 'ullage': 6851.0, 'height': 130.0628662109375, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 16:59:01.207 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 16:59:11.207 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 16:59:11.217 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'No differences'}}]
+2023-01-18 16:59:21.225 DEBUG - rcv: {'host': '192.168.99.100', 'req_type': 'i201', 'date': '2023-01-18', 'time': '16:59', 'probe_number': 2, 'volume': 15040.0, 'tc_volume': 15040.0, 'ullage': 6951.0, 'height': 129.3121337890625, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 16:59:21.237 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 16:59:31.152 DEBUG - No pending Alarms
+2023-01-18 16:59:31.240 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 16:59:31.250 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 16:59:41.254 DEBUG - rcv: {'host': '192.168.99.100', 'req_type': 'i201', 'date': '2023-01-18', 'time': '16:59', 'probe_number': 2, 'volume': 15040.0, 'tc_volume': 15040.0, 'ullage': 6951.0, 'height': 129.3121337890625, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 16:59:41.264 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 16:59:51.268 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 16:59:56.278 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-01-18 17:00:06.285 DEBUG - rcv: {'host': '192.168.99.100', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:00', 'probe_number': 2, 'volume': 15040.0, 'tc_volume': 15040.0, 'ullage': 6951.0, 'height': 129.3121337890625, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:00:11.296 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-01-18 17:00:31.300 DEBUG - rcv: {'host': '192.168.99.100', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:00', 'probe_number': 2, 'volume': 15040.0, 'tc_volume': 15040.0, 'ullage': 6951.0, 'height': 129.3121337890625, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:00:36.309 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-01-18 17:00:46.310 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:00:51.319 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-01-18 17:00:51.320 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:00:56.332 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-01-18 17:01:06.336 DEBUG - rcv: {'host': '192.168.99.100', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:01', 'probe_number': 2, 'volume': 15040.0, 'tc_volume': 15040.0, 'ullage': 6951.0, 'height': 129.3121337890625, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:01:06.359 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:01:26.368 DEBUG - rcv: {'host': '192.168.99.100', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:01', 'probe_number': 2, 'volume': 15040.0, 'tc_volume': 15040.0, 'ullage': 6951.0, 'height': 129.3121337890625, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:01:31.380 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-01-18 17:01:41.381 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:01:46.389 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-01-18 17:01:56.392 DEBUG - rcv: {'host': '192.168.99.100', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:01', 'probe_number': 2, 'volume': 15040.0, 'tc_volume': 15040.0, 'ullage': 6951.0, 'height': 129.3121337890625, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:01:58.098 WARNING - ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+2023-01-18 17:02:08.101 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:02:08.110 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 17:02:18.117 DEBUG - rcv: {'host': '192.168.99.100', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:02', 'probe_number': 2, 'volume': 15040.0, 'tc_volume': 15040.0, 'ullage': 6951.0, 'height': 129.3121337890625, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:02:18.130 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:02:28.134 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:02:33.143 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-01-18 17:02:43.150 DEBUG - rcv: {'host': '192.168.99.100', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:02', 'probe_number': 2, 'volume': 15040.0, 'tc_volume': 15040.0, 'ullage': 6951.0, 'height': 129.3121337890625, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:02:48.158 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-01-18 17:03:08.167 DEBUG - rcv: {'host': '192.168.99.100', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:03', 'probe_number': 2, 'volume': 15040.0, 'tc_volume': 15040.0, 'ullage': 6951.0, 'height': 129.3121337890625, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:03:13.176 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-01-18 17:03:23.180 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:03:28.188 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-01-18 17:03:28.189 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:03:33.198 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-01-18 17:03:43.206 DEBUG - rcv: {'host': '192.168.99.100', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:03', 'probe_number': 2, 'volume': 15040.0, 'tc_volume': 15040.0, 'ullage': 6951.0, 'height': 129.3121337890625, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:03:48.215 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-01-18 17:03:58.216 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:03:58.219 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /check_for_differences_on_standby_tanks/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10e935ed0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 17:04:08.223 DEBUG - rcv: {'host': '192.168.99.100', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:04', 'probe_number': 2, 'volume': 15040.0, 'tc_volume': 15040.0, 'ullage': 6951.0, 'height': 129.3121337890625, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:04:13.232 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-01-18 17:04:33.239 DEBUG - rcv: {'host': '192.168.99.100', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:04', 'probe_number': 2, 'volume': 15040.0, 'tc_volume': 15040.0, 'ullage': 6951.0, 'height': 129.3121337890625, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:04:38.248 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-01-18 17:04:48.253 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:04:53.263 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-01-18 17:04:53.264 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:04:58.271 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-01-18 17:05:08.281 DEBUG - rcv: {'host': '192.168.99.100', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:05', 'probe_number': 2, 'volume': 15040.0, 'tc_volume': 15040.0, 'ullage': 6951.0, 'height': 129.3121337890625, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:05:13.289 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-01-18 17:05:23.292 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:05:28.301 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-01-18 17:05:38.304 DEBUG - rcv: {'host': '192.168.99.100', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:05', 'probe_number': 2, 'volume': 15040.0, 'tc_volume': 15040.0, 'ullage': 6951.0, 'height': 129.3121337890625, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:05:43.313 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-01-18 17:06:03.320 DEBUG - rcv: {'host': '192.168.99.100', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:06', 'probe_number': 2, 'volume': 15040.0, 'tc_volume': 15040.0, 'ullage': 6951.0, 'height': 129.3121337890625, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:06:03.324 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /new_inventory/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10e9344c0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 17:06:13.325 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:06:14.058 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 17:06:14.059 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:06:14.142 WARNING - STAND BY - {'response': False}
+2023-01-18 17:06:24.147 DEBUG - rcv: {'host': '192.168.99.100', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:06', 'probe_number': 2, 'volume': 15040.0, 'tc_volume': 15040.0, 'ullage': 6951.0, 'height': 129.3121337890625, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:06:24.162 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:06:44.167 DEBUG - rcv: {'host': '192.168.99.100', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:06', 'probe_number': 2, 'volume': 15040.0, 'tc_volume': 15040.0, 'ullage': 6951.0, 'height': 129.3121337890625, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:06:49.176 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-01-18 17:06:59.178 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:07:04.187 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-01-18 17:07:14.195 DEBUG - rcv: {'host': '192.168.99.100', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:07', 'probe_number': 2, 'volume': 15040.0, 'tc_volume': 15040.0, 'ullage': 6951.0, 'height': 129.3121337890625, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:07:19.205 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-01-18 17:07:29.211 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:07:34.220 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-01-18 17:07:44.228 DEBUG - rcv: {'host': '192.168.99.100', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:07', 'probe_number': 2, 'volume': 15040.0, 'tc_volume': 15040.0, 'ullage': 6951.0, 'height': 129.3121337890625, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:07:44.239 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:07:54.242 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:07:54.259 WARNING - STAND BY - {'response': False}
+2023-01-18 17:08:04.268 DEBUG - rcv: {'host': '192.168.99.100', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:08', 'probe_number': 2, 'volume': 15040.0, 'tc_volume': 15040.0, 'ullage': 6951.0, 'height': 129.3121337890625, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:08:04.279 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:08:24.292 DEBUG - rcv: {'host': '192.168.99.100', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:08', 'probe_number': 2, 'volume': 15040.0, 'tc_volume': 15040.0, 'ullage': 6951.0, 'height': 129.3121337890625, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:08:29.309 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-01-18 17:08:39.313 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:08:44.322 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-01-18 17:08:44.322 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:08:49.333 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-01-18 17:08:59.340 DEBUG - rcv: {'host': '192.168.99.100', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:08', 'probe_number': 2, 'volume': 15040.0, 'tc_volume': 15040.0, 'ullage': 6951.0, 'height': 129.3121337890625, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:09:04.349 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-01-18 17:09:14.354 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:09:19.362 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-01-18 17:09:29.366 DEBUG - rcv: {'host': '192.168.99.100', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:09', 'probe_number': 2, 'volume': 15040.0, 'tc_volume': 15040.0, 'ullage': 6951.0, 'height': 129.3121337890625, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:09:34.375 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-01-18 17:09:54.384 DEBUG - rcv: {'host': '192.168.99.100', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:09', 'probe_number': 2, 'volume': 15040.0, 'tc_volume': 15040.0, 'ullage': 6951.0, 'height': 129.3121337890625, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:09:59.394 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-01-18 17:10:09.392 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:10:14.396 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-01-18 17:10:14.397 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:10:19.401 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-01-18 17:10:24.401 DEBUG - error - cant connect to host 192.168.99.75 - desc: timed out
+2023-01-18 17:10:24.402 WARNING - Trying to reconnect
+2023-01-18 17:10:29.402 WARNING - error - cant re-connect to host 192.168.99.75 - desc: timed out
+2023-01-18 17:16:09.343 INFO - ########TlS Reading Logger Started########
+2023-01-18 17:16:09.363 DEBUG - Got config - {'id': 1, 'host': '192.168.99.75', 'port': 1001, 'depositoId': 2232}
+2023-01-18 17:16:09.364 INFO - Configuration Loaded. Trying to Connect to 192.168.99.75...
+2023-01-18 17:16:09.373 DEBUG - Got Probe definition - [{'id': 1, 'number': 1, 'product_name': 'Diesel', 'probe_number': 1, 'capacity': 22000.0, 'monitoring': 0, 'threshold': 100.0}, {'id': 2, 'number': 2, 'product_name': 'ETANOL', 'probe_number': 2, 'capacity': 22000.0, 'monitoring': 0, 'threshold': 60.0}]
+2023-01-18 17:16:14.374 DEBUG - error - cant connect to host 192.168.99.75 - desc: timed out
+2023-01-18 17:16:14.375 WARNING - Trying to reconnect
+2023-01-18 17:16:19.376 WARNING - error - cant re-connect to host 192.168.99.75 - desc: timed out
+2023-01-18 17:16:28.146 INFO - ########TlS Reading Logger Started########
+2023-01-18 17:16:28.163 DEBUG - Got config - {'id': 1, 'host': '192.168.99.75', 'port': 1001, 'depositoId': 2232}
+2023-01-18 17:16:28.163 INFO - Configuration Loaded. Trying to Connect to 192.168.99.75...
+2023-01-18 17:16:28.172 DEBUG - Got Probe definition - [{'id': 1, 'number': 1, 'product_name': 'Diesel', 'probe_number': 1, 'capacity': 22000.0, 'monitoring': 0, 'threshold': 100.0}, {'id': 2, 'number': 2, 'product_name': 'ETANOL', 'probe_number': 2, 'capacity': 22000.0, 'monitoring': 0, 'threshold': 60.0}]
+2023-01-18 17:16:33.173 DEBUG - error - cant connect to host 192.168.99.75 - desc: timed out
+2023-01-18 17:16:33.174 WARNING - Trying to reconnect
+2023-01-18 17:16:38.175 WARNING - error - cant re-connect to host 192.168.99.75 - desc: timed out
+2023-01-18 17:17:31.108 INFO - ########TlS Reading Logger Started########
+2023-01-18 17:17:31.125 DEBUG - Got config - {'id': 2, 'host': '192.168.1.122', 'port': 1001, 'depositoId': 2232}
+2023-01-18 17:17:31.125 INFO - Configuration Loaded. Trying to Connect to 192.168.1.122...
+2023-01-18 17:17:31.133 DEBUG - Got Probe definition - [{'id': 1, 'number': 1, 'product_name': 'Diesel', 'probe_number': 1, 'capacity': 22000.0, 'monitoring': 0, 'threshold': 100.0}, {'id': 2, 'number': 2, 'product_name': 'ETANOL', 'probe_number': 2, 'capacity': 22000.0, 'monitoring': 0, 'threshold': 60.0}]
+2023-01-18 17:17:31.135 DEBUG - Connected to: 192.168.1.122:1001
+2023-01-18 17:17:41.148 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:17', 'probe_number': 2, 'volume': 14940.0, 'tc_volume': 14940.0, 'ullage': 7051.0, 'height': 128.5675048828125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:17:41.159 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:18:01.120 DEBUG - No pending Alarms
+2023-01-18 17:18:01.171 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:18', 'probe_number': 2, 'volume': 14840.0, 'tc_volume': 14840.0, 'ullage': 7151.0, 'height': 127.8228759765625, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:18:01.182 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:18:11.186 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:18:11.261 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Relay is closed and alarm inserted'}}]
+2023-01-18 17:18:21.270 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:18', 'probe_number': 2, 'volume': 14840.0, 'tc_volume': 14840.0, 'ullage': 7151.0, 'height': 127.8228759765625, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:18:21.281 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:18:31.286 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:18:31.297 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 17:18:41.302 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:18', 'probe_number': 2, 'volume': 14840.0, 'tc_volume': 14840.0, 'ullage': 7151.0, 'height': 127.8228759765625, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:18:41.313 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:18:51.315 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:18:51.326 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'No differences'}}]
+2023-01-18 17:19:01.185 DEBUG - No pending Alarms
+2023-01-18 17:19:01.330 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:19', 'probe_number': 2, 'volume': 14585.0, 'tc_volume': 14585.0, 'ullage': 7406.0, 'height': 125.9307861328125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:19:01.342 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:19:21.352 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:19', 'probe_number': 2, 'volume': 14585.0, 'tc_volume': 14585.0, 'ullage': 7406.0, 'height': 125.9307861328125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:19:21.363 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:19:31.199 DEBUG - No pending Alarms
+2023-01-18 17:19:31.366 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:19:31.434 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Relay is closed and alarm inserted'}}]
+2023-01-18 17:19:31.435 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:19:31.446 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 17:19:41.451 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:19', 'probe_number': 2, 'volume': 14585.0, 'tc_volume': 14585.0, 'ullage': 7406.0, 'height': 125.9307861328125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:19:41.462 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:20:01.469 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:20', 'probe_number': 2, 'volume': 14585.0, 'tc_volume': 14585.0, 'ullage': 7406.0, 'height': 125.9307861328125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:20:01.479 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:20:11.484 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:20:11.493 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:20:21.502 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:20', 'probe_number': 2, 'volume': 14585.0, 'tc_volume': 14585.0, 'ullage': 7406.0, 'height': 125.9307861328125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:20:21.513 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:20:31.262 DEBUG - No pending Alarms
+2023-01-18 17:20:31.514 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:20:31.525 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 17:20:41.529 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:20', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:20:41.540 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:20:51.544 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:20:51.616 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Relay is closed and alarm inserted'}}]
+2023-01-18 17:21:01.622 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:21', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:21:01.632 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:21:21.643 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:21', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:21:21.654 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:21:31.659 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:21:31.669 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:21:31.669 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:21:31.678 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 17:21:41.684 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:21', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:21:41.695 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:22:01.703 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:22', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:22:01.715 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:22:11.717 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:22:11.727 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:22:21.731 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:22', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:22:21.741 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:22:31.746 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:22:31.754 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 17:22:41.758 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:22', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:22:41.768 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:22:51.768 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:22:51.777 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:23:01.781 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:23', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:23:01.793 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:23:21.799 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:23', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:23:21.809 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:23:31.812 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:23:31.823 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:23:31.824 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:23:31.842 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 17:23:41.856 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:23', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:23:41.867 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:24:01.873 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:24', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:24:01.883 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:24:11.889 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:24:11.899 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:24:21.906 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:24', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:24:21.917 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:24:31.918 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:24:31.926 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 17:24:41.934 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:24', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:24:41.945 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:24:51.949 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:24:51.959 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:25:01.966 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:25', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:25:01.978 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:25:21.989 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:25', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:25:22.000 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:25:32.003 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:25:32.013 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:25:32.013 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:25:32.033 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 17:25:42.046 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:25', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:25:42.056 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:26:02.071 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:26', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:26:02.083 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:26:12.093 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:26:12.103 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:26:24.087 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:26', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:26:24.097 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:26:34.107 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:26:34.117 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 17:26:44.125 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:26', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:26:44.137 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:26:54.144 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:26:54.154 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:27:04.162 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:27', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:27:04.173 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:27:24.186 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:27', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:27:24.200 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:27:34.204 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:27:34.214 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:27:34.214 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:27:34.224 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 17:27:44.229 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:27', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:27:44.242 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:28:04.254 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:28', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:28:04.266 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:28:14.270 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:28:14.280 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:28:24.288 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:28', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:28:24.301 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:28:34.303 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:28:34.311 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 17:28:44.319 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:28', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:28:44.330 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:28:54.335 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:28:54.345 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:29:04.350 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:29', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:29:04.360 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:29:24.369 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:29', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:29:24.380 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:29:34.385 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:29:34.394 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:29:34.395 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:29:34.403 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 17:29:44.410 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:29', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:29:44.421 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:30:04.427 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:30', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:30:04.438 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:30:14.442 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:30:14.451 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:30:24.458 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:30', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:30:24.468 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:30:34.473 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:30:34.481 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 17:30:44.487 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:30', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:30:44.498 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:30:54.504 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:30:54.513 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:31:04.520 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:31', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:31:04.531 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:31:24.542 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:31', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:31:24.552 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:31:34.553 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:31:34.562 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:31:34.562 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:31:34.577 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 17:31:44.590 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:31', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:31:44.600 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:32:04.589 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:32', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:32:04.599 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:32:14.589 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:32:14.598 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:32:24.598 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:32', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:32:24.609 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:32:34.609 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:32:34.619 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 17:32:44.622 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:32', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:32:44.632 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:32:54.637 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:32:54.647 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:33:04.653 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:33', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:33:04.663 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:33:24.672 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:33', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:33:24.682 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:33:34.683 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:33:34.693 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:33:34.693 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:33:34.703 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 17:33:44.711 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:33', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:33:44.721 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:34:04.735 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:34', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:34:04.745 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:34:14.756 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:34:14.765 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:34:24.777 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:34', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:34:24.787 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:34:34.794 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:34:34.804 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 17:34:44.812 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:34', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:34:44.822 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:34:54.827 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:34:54.836 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:35:04.846 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:35', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:35:04.856 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:35:24.878 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:35', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:35:24.888 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:35:34.897 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:35:34.908 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:35:34.909 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:35:34.918 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 17:35:44.922 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:35', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:35:44.932 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:36:04.943 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:36', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:36:04.953 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:36:14.961 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:36:14.971 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:36:24.983 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:36', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:36:24.993 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:36:35.004 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:36:35.012 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 17:36:45.024 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:36', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:36:45.034 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:36:55.042 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:36:55.051 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:37:05.061 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:37', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:37:05.071 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:37:25.089 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:37', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:37:25.100 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:37:35.109 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:37:35.117 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:37:35.118 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:37:35.127 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 17:37:45.139 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:37', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:37:45.149 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:38:05.169 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:38', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:38:05.180 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:38:15.184 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:38:15.195 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:38:25.206 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:38', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:38:25.216 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:38:35.225 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:38:35.234 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 17:38:45.247 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:38', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:38:45.259 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:38:55.265 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:38:55.276 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:39:05.286 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:39', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:39:05.297 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:39:25.310 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:39', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:39:25.320 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:39:35.326 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:39:35.334 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:39:35.335 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:39:35.344 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 17:39:45.352 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:39', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:39:45.363 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:40:05.383 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:40', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:40:05.394 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:40:15.402 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:40:15.412 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:40:25.424 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:40', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:40:25.434 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:40:35.442 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:40:35.452 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 17:40:45.464 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:40', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:40:45.475 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:40:55.483 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:40:55.493 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:41:05.506 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:41', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:41:05.516 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:41:25.529 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:41', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:41:25.539 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:41:35.546 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:41:35.555 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:41:35.555 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:41:35.564 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 17:41:45.576 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:41', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:41:45.588 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:42:05.609 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:42', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:42:05.619 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:42:15.629 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:42:15.639 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:42:25.652 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:42', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:42:25.663 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:42:35.668 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:42:35.677 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 17:42:45.692 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:42', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:42:45.702 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:42:55.710 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:42:55.720 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:43:05.731 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:43', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:43:05.742 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:43:25.754 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:43', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:43:25.764 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:43:35.769 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:43:35.782 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:43:35.783 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:43:35.792 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 17:43:45.798 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:43', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:43:45.810 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:44:05.826 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:44', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:44:05.837 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:44:15.845 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:44:15.861 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:44:25.869 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:44', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:44:25.880 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:44:35.885 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:44:35.894 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 17:44:45.899 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:44', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:44:45.910 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:44:55.917 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:44:55.927 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:45:05.933 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:45', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:45:05.944 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:45:25.959 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:45', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:45:25.970 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:45:35.980 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:45:35.990 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:45:35.991 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:45:36.000 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 17:45:46.010 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:45', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:45:46.021 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:46:06.034 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:46', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:46:06.045 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:46:16.053 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:46:16.063 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:46:26.072 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:46', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:46:26.083 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:46:36.089 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:46:36.098 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 17:46:46.111 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:46', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:46:46.122 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:46:56.131 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:46:56.142 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:47:06.146 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:47', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:47:06.157 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:47:26.160 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:47', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:47:26.170 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:47:36.175 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:47:36.185 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:47:36.186 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:47:36.195 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 17:47:46.207 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:47', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:47:46.217 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:48:06.235 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:48', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:48:06.245 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:48:16.255 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:48:16.266 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:48:26.276 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:48', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:48:26.286 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:48:36.293 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:48:36.301 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 17:48:46.307 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:48', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:48:46.317 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:48:56.328 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:48:56.338 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:49:06.347 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:49', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:49:06.358 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:49:26.378 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:49', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:49:26.388 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:49:36.397 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:49:36.406 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:49:36.406 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:49:36.417 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 17:49:46.421 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:49', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:49:46.432 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:50:06.447 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:50', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:50:06.458 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:50:16.465 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:50:16.476 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:50:26.488 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:50', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:50:26.499 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:50:36.507 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:50:36.517 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 17:50:46.530 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:50', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:50:46.541 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:50:56.542 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:50:56.552 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:51:06.559 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:51', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:51:06.570 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:51:26.588 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:51', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:51:26.598 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:51:36.608 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:51:36.618 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:51:36.619 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:51:36.627 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 17:51:46.639 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:51', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:51:46.649 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:52:06.697 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:52', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:52:06.723 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:52:16.731 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:52:16.741 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:52:26.751 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:52', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:52:26.762 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:52:36.772 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:52:36.782 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 17:52:46.794 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:52', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:52:46.805 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:52:56.813 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:52:56.823 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:53:06.832 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:53', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:53:06.843 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:53:26.857 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:53', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:53:26.867 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:53:36.878 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:53:36.888 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:53:36.888 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:53:36.898 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 17:53:46.910 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:53', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:53:46.920 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:54:06.935 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:54', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:54:06.946 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:54:16.955 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:54:16.966 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:54:26.977 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:54', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:54:26.988 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:54:36.996 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:54:37.006 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 17:54:47.015 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:54', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:54:47.025 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:54:57.028 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:54:57.038 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:55:07.047 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:55', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:55:07.058 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:55:27.079 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:55', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:55:27.090 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:55:37.100 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:55:37.110 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:55:37.111 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:55:37.120 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 17:55:47.130 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:55', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:55:47.140 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:56:07.156 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:56', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:56:07.168 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:56:17.178 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:56:17.188 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:56:27.200 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:56', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:56:27.211 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:56:37.219 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:56:37.228 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 17:56:47.236 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:56', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:56:47.246 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:56:57.251 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:56:57.260 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:57:07.268 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:57', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:57:07.279 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:57:27.290 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:57', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:57:27.300 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:57:37.308 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:57:37.317 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:57:37.317 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:57:37.327 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 17:57:47.340 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:57', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:57:47.350 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:58:07.372 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:58', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:58:07.383 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:58:17.392 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:58:17.401 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:58:27.411 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:58', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:58:27.421 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:58:37.430 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:58:37.439 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 17:58:47.453 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:58', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:58:47.464 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:58:57.467 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:58:57.477 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:59:07.487 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:59', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:59:07.497 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:59:27.513 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:59', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:59:27.523 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 17:59:37.532 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:59:37.542 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 17:59:37.542 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 17:59:37.552 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 17:59:47.564 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '17:59', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 17:59:47.574 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:00:07.593 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:00', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:00:07.603 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:00:17.614 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:00:17.625 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:00:27.634 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:00', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:00:27.643 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:00:37.648 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:00:37.656 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 18:00:47.666 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:00', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:00:47.676 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:00:57.683 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:00:57.693 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:01:07.704 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:01', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:01:07.714 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:01:27.735 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:01', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:01:27.745 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:01:37.756 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:01:37.767 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:01:37.767 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:01:37.776 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 18:01:47.785 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:01', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:01:47.795 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:02:07.815 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:02', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:02:07.826 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:02:17.768 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:02:17.778 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:02:27.789 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:02', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:02:27.799 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:02:37.806 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:02:37.815 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 18:02:47.824 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:02', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:02:47.834 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:02:57.835 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:02:57.844 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:03:07.858 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:03', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:03:07.868 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:03:27.888 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:03', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:03:27.898 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:03:37.907 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:03:37.917 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:03:37.917 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:03:37.928 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 18:03:47.937 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:03', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:03:47.948 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:04:07.963 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:04', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:04:07.973 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:04:17.978 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:04:17.987 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:04:27.991 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:04', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:04:28.002 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:04:38.009 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:04:38.018 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 18:04:48.029 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:04', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:04:48.040 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:04:58.051 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:04:58.061 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:05:08.074 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:05', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:05:08.084 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:05:28.102 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:05', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:05:28.112 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:05:38.123 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:05:38.133 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:05:38.133 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:05:38.142 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 18:05:48.151 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:05', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:05:48.163 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:06:08.186 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:06', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:06:08.196 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:06:18.206 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:06:18.215 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:06:28.224 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:06', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:06:28.234 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:06:38.242 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:06:38.251 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 18:06:48.260 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:06', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:06:48.271 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:06:58.280 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:06:58.289 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:07:08.299 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:07', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:07:08.310 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:07:28.323 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:07', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:07:28.334 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:07:38.342 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:07:38.352 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:07:38.353 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:07:38.363 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 18:07:48.377 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:07', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:07:48.388 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:08:08.408 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:08', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:08:08.465 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:08:18.472 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:08:18.483 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:08:28.492 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:08', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:08:28.502 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:08:38.510 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:08:38.520 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 18:08:48.531 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:08', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:08:48.542 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:08:58.547 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:08:58.556 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:09:08.565 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:09', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:09:08.584 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:09:28.595 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:09', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:09:28.607 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:09:38.613 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:09:38.662 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:09:38.662 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:09:38.672 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 18:09:48.680 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:09', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:09:48.691 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:10:08.707 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:10', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:10:08.756 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:10:18.765 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:10:18.775 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:10:28.779 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:10', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:10:28.790 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:10:38.792 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:10:38.813 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 18:10:48.825 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:10', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:10:48.836 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:10:58.843 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:10:58.852 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:11:08.862 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:11', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:11:08.894 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:11:28.906 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:11', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:11:28.917 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:11:38.925 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:11:38.949 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:11:38.950 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:11:38.959 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 18:11:48.968 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:11', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:11:48.978 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:12:08.990 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:12', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:12:09.070 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:12:19.075 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:12:19.084 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:12:29.093 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:12', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:12:29.103 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:12:39.112 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:12:39.137 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 18:12:49.144 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:12', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:12:49.155 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:12:59.161 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:12:59.172 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:13:09.183 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:13', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:13:09.202 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:13:29.221 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:13', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:13:29.231 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:13:39.236 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:13:39.275 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:13:39.275 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:13:39.285 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 18:13:49.299 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:13', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:13:49.309 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:14:09.324 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:14', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:14:09.340 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:14:19.342 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:14:19.351 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:14:29.362 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:14', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:14:29.373 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:14:39.379 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:14:39.423 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 18:14:49.427 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:14', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:14:49.438 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:14:59.445 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:14:59.459 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:15:09.468 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:15', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:15:09.482 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:15:29.493 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:15', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:15:29.504 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:15:39.514 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:15:39.547 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:15:39.547 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:15:39.558 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 18:15:49.568 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:15', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:15:49.578 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:16:09.592 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:16', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:16:09.607 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:16:19.616 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:16:19.626 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:16:29.632 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:16', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:16:29.642 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:16:39.652 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:16:39.686 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 18:16:49.696 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:16', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:16:49.707 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:16:59.714 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:16:59.723 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:17:09.736 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:17', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:17:09.802 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:17:29.815 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:17', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:17:29.825 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:17:39.834 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:17:39.872 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:17:39.872 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:17:39.882 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 18:17:49.889 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:17', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:17:49.900 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:18:09.917 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:18', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:18:09.975 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:18:19.980 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:18:19.989 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:18:29.996 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:18', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:18:30.006 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:18:40.016 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:18:40.035 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 18:18:50.041 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:18', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:18:50.051 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:19:00.052 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:19:00.062 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:19:10.073 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:19', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:19:10.083 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:19:30.100 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:19', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:19:30.111 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:19:40.120 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:19:40.129 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:19:40.130 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:19:40.141 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 18:19:50.147 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:19', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:19:50.157 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:20:10.174 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:20', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:20:10.184 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:20:20.185 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:20:20.194 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:20:30.206 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:20', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:20:30.217 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:20:40.227 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:20:40.237 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 18:20:50.244 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:20', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:20:50.255 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:21:00.258 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:21:00.267 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:21:10.272 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:21', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:21:10.283 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:21:30.304 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:21', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:21:30.314 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:21:40.318 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:21:40.328 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:21:40.329 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:21:40.338 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 18:21:50.349 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:21', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:21:50.359 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:22:10.375 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:22', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:22:10.385 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:22:20.395 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:22:20.404 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:22:30.417 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:22', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:22:30.427 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:22:40.434 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:22:40.443 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 18:22:50.451 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:22', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:22:50.461 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:23:00.469 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:23:00.478 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:23:10.486 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:23', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:23:10.496 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:23:30.516 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:23', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:23:30.526 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:23:40.535 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:23:40.545 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:23:40.545 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:23:40.554 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 18:23:50.563 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:23', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:23:50.574 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:24:10.587 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:24', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:24:10.598 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:24:20.602 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:24:20.611 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:24:30.617 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:24', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:24:30.626 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:24:40.629 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:24:40.637 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 18:24:50.646 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:24', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:24:50.656 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:25:00.659 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:25:00.669 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:25:10.673 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:25', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:25:10.684 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:25:30.694 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:25', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:25:30.704 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:25:40.707 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:25:40.716 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:25:40.717 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:25:40.726 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 18:25:50.733 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:25', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:25:50.744 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:26:10.752 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:26', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:26:10.763 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:26:20.766 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:26:20.776 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:26:30.784 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:26', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:26:30.794 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:26:40.796 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:26:40.806 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 18:26:50.809 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:26', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:26:50.820 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:27:00.825 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:27:00.835 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:27:10.839 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:27', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:27:10.849 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:27:30.854 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:27', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:27:30.864 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:27:40.865 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:27:40.875 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:27:40.875 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:27:40.885 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 18:27:50.891 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:27', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:27:50.902 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:28:10.911 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:28', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:28:10.923 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:28:20.924 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:28:20.933 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:28:30.940 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:28', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:28:30.951 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:28:40.954 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:28:40.962 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 18:28:50.973 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:28', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:28:50.984 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:29:00.993 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:29:01.002 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:29:11.006 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:29', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:29:11.016 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:29:31.035 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:29', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:29:31.045 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:29:41.051 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:29:41.060 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:29:41.061 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:29:41.070 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 18:29:51.077 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:29', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:29:51.087 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:30:11.104 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:30', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:30:11.114 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:30:21.123 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:30:21.133 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:30:31.142 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:30', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:30:31.152 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:30:41.157 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:30:41.165 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 18:30:51.178 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:30', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:30:51.189 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:31:01.197 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:31:01.207 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:31:11.216 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:31', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:31:11.226 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:31:31.243 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:31', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:31:31.253 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:31:41.255 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:31:41.265 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:31:41.265 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:31:41.275 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 18:31:51.287 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:31', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:31:51.297 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:32:11.308 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:32', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:32:11.319 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:32:21.327 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:32:21.336 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:32:31.346 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:32', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:32:31.356 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:32:41.363 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:32:41.372 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 18:32:51.381 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:32', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:32:51.392 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:33:01.396 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:33:01.406 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:33:11.411 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:33', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:33:11.421 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:33:31.439 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:33', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:33:31.450 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:33:41.456 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:33:41.466 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:33:41.467 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:33:41.476 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 18:33:51.484 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:33', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:33:51.495 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:34:11.516 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:34', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:34:11.526 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:34:21.531 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:34:21.540 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:34:31.549 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:34', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:34:31.559 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:34:41.562 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:34:41.570 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 18:34:51.579 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:34', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:34:51.589 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:35:01.598 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:35:01.607 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:35:11.616 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:35', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:35:11.626 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:35:31.642 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:35', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:35:31.652 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:35:41.660 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:35:41.670 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:35:41.671 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:35:41.681 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 18:35:51.690 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:35', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:35:51.700 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:36:11.717 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:36', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:36:11.727 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:36:21.736 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:36:21.746 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:36:31.757 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:36', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:36:31.767 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:36:41.778 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:36:41.788 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 18:36:51.793 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:36', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:36:51.803 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:37:01.811 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:37:01.820 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:37:11.826 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:37', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:37:11.837 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:37:31.854 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:37', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:37:31.864 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:37:41.869 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:37:41.878 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:37:41.878 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:37:41.889 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 18:37:51.898 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:37', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:37:51.908 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:38:11.927 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:38', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:38:11.938 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:38:21.944 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:38:21.953 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:38:31.965 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:38', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:38:31.975 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:38:41.984 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:38:41.994 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 18:38:52.004 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:38', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:38:52.014 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:39:02.022 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:39:02.032 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:39:12.038 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:39', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:39:12.048 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:39:32.064 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:39', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:39:32.073 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:39:42.076 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:39:42.086 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:39:42.087 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:39:42.096 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 18:39:52.106 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:39', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:39:52.116 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:40:12.135 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:40', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:40:12.145 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:40:22.154 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:40:22.163 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:40:32.174 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:40', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:40:32.184 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:40:42.189 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:40:42.198 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 18:40:52.206 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:40', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:40:52.216 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:41:02.220 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:41:02.230 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:41:12.240 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:41', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:41:12.250 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:41:32.267 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:41', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:41:32.278 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:41:42.285 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:41:42.295 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:41:42.295 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:41:42.305 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 18:41:52.315 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:41', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:41:52.325 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:42:12.348 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:42', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:42:12.358 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:42:22.365 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:42:22.375 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:42:32.388 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:42', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:42:32.399 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:42:42.407 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:42:42.416 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 18:42:52.427 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:42', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:42:52.438 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:43:02.447 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:43:02.457 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:43:12.477 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:43', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:43:12.487 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:43:32.505 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:43', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:43:32.515 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:43:42.518 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:43:42.528 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:43:42.528 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:43:42.539 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 18:43:52.549 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:43', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:43:52.560 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:44:12.575 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:44', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:44:12.586 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:44:22.589 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:44:22.598 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:44:32.610 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:44', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:44:32.620 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:44:42.628 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:44:42.637 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 18:44:52.648 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:44', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:44:52.658 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:45:02.660 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:45:02.668 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:45:12.679 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:45', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:45:12.690 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:45:32.704 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:45', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:45:32.713 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:45:42.723 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:45:42.732 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:45:42.733 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:45:42.742 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 18:45:52.748 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:45', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:45:52.758 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:46:12.768 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:46', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:46:12.779 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:46:22.783 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:46:22.793 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:46:32.798 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:46', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:46:32.809 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:46:42.812 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:46:42.820 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 18:46:52.824 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:46', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:46:52.836 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:47:02.841 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:47:02.852 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:47:12.859 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:47', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:47:12.869 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:47:32.882 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:47', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:47:32.892 DEBUG - Inserting into DB - {'response': True}
+2023-01-18 18:47:42.898 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:47:42.907 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
+2023-01-18 18:47:42.907 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:47:42.917 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
