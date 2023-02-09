@@ -57,7 +57,7 @@ def set_log_rotate():
 
 def get_config(log):
     try:
-        response = requests.get(f'http://localhost:{API_PORT}/get_config/', headers=JSON_HEADERS, timeout=5)
+        response = requests.get(f'http://localhost:{API_PORT}/get_config/', headers=JSON_HEADERS, timeout=15)
         if response.status_code == 200 and response.content != None:
             log.debug(f'Got config - {json.loads(response.content)}')
             return json.loads(response.content) 
