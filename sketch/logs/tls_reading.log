@@ -27544,3 +27544,572 @@
 2023-01-18 18:47:42.907 WARNING - STAND BY - [{'id': 2, 'probe_number': 2, 'threshold': 60.0, 'product_name': 'ETANOL', 'details': {'response': 'Already pending alarms on tank/probe'}}]
 2023-01-18 18:47:42.907 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
 2023-01-18 18:47:42.917 DEBUG - Checking DB Size: {'response': 'DB Size OK'}
+2023-01-18 18:47:52.925 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:47', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:47:52.928 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /new_inventory/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3d630>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:48:12.938 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:48', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:48:12.942 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /new_inventory/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108cdfac0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:48:22.946 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:48:22.949 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /check_for_differences_on_standby_tanks/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108cdf910>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:48:32.955 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:48', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:48:32.959 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /new_inventory/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3dae0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:48:42.963 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:48:42.967 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /clean_inventories/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3cdc0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:48:52.975 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:48', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:48:52.979 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /new_inventory/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3ce80>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:49:02.983 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:49:02.986 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /check_for_differences_on_standby_tanks/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108cdfb20>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:49:12.995 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:49', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:49:12.999 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /new_inventory/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108cdf0d0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:49:33.006 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:49', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:49:33.009 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /new_inventory/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3d870>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:49:43.011 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:49:43.015 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /check_for_differences_on_standby_tanks/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3c310>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:49:43.015 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:49:43.018 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /clean_inventories/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3f1f0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:49:53.026 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:49', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:49:53.030 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /new_inventory/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108cddd80>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:50:13.041 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:50', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:50:13.045 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /new_inventory/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108cdfbb0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:50:23.046 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:50:23.049 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /check_for_differences_on_standby_tanks/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3c370>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:50:33.056 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:50', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:50:33.059 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /new_inventory/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3ee00>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:50:43.060 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:50:43.063 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /clean_inventories/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3d2d0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:50:53.072 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:50', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:50:53.080 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /new_inventory/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108cdf490>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:51:03.086 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:51:03.089 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /check_for_differences_on_standby_tanks/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3f2b0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:51:13.097 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:51', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:51:13.100 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /new_inventory/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3c0a0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:51:33.110 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:51', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:51:33.113 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /new_inventory/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3dab0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:51:43.119 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:51:43.123 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /check_for_differences_on_standby_tanks/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3f3d0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:51:43.123 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:51:43.126 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /clean_inventories/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108cde020>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:51:53.133 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:51', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:51:53.137 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /new_inventory/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3cbe0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:52:13.145 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:52', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:52:13.149 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /new_inventory/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3f3a0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:52:23.154 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:52:23.158 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /check_for_differences_on_standby_tanks/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3dde0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:52:33.161 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:52', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:52:33.165 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /new_inventory/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108cdf970>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:52:43.170 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:52:43.174 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /clean_inventories/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108cdfa30>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:52:53.179 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:52', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:52:53.182 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /new_inventory/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3ee90>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:53:03.186 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:53:03.190 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /check_for_differences_on_standby_tanks/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3c700>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:53:13.199 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:53', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:53:13.203 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /new_inventory/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3c310>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:53:33.212 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:53', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:53:33.216 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /new_inventory/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108cdef80>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:53:43.221 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:53:43.224 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /check_for_differences_on_standby_tanks/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108cdedd0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:53:43.224 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:53:43.227 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /clean_inventories/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3d7e0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:53:53.235 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:53', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:53:53.238 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /new_inventory/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3c130>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:54:13.251 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:54', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:54:13.255 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /new_inventory/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3ee90>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:54:23.263 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:54:23.267 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /check_for_differences_on_standby_tanks/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108cdec50>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:54:33.277 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:54', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:54:33.281 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /new_inventory/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108cddd20>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:54:43.283 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:54:43.286 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /clean_inventories/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3d870>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:54:53.294 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:54', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:54:53.297 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /new_inventory/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3f550>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:55:03.298 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:55:03.321 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /check_for_differences_on_standby_tanks/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3e890>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:55:13.332 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:55', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:55:13.336 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /new_inventory/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108cdf190>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:55:33.348 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:55', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:55:33.351 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /new_inventory/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3c9a0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:55:43.359 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:55:43.362 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /check_for_differences_on_standby_tanks/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3d270>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:55:43.362 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:55:43.365 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /clean_inventories/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3f0d0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:55:53.374 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:55', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:55:53.377 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /new_inventory/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3d5a0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:56:13.398 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:56', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:56:13.402 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /new_inventory/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108cdf100>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:56:23.407 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:56:23.410 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /check_for_differences_on_standby_tanks/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3cf40>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:56:33.419 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:56', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:56:33.422 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /new_inventory/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3d1e0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:56:43.432 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:56:43.436 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /clean_inventories/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3f0d0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:56:53.448 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:56', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:56:53.452 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /new_inventory/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3f850>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:57:03.459 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:57:03.463 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /check_for_differences_on_standby_tanks/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108cddd80>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:57:13.468 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:57', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:57:13.471 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /new_inventory/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108cdf880>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:57:33.486 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:57', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:57:33.489 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /new_inventory/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3eb60>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:57:43.498 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:57:43.501 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /check_for_differences_on_standby_tanks/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3cb80>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:57:43.502 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:57:43.504 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /clean_inventories/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3ee90>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:57:53.516 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:57', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:57:53.519 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /new_inventory/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108cdf040>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:58:13.533 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:58', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:58:13.536 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /new_inventory/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3c790>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:58:23.545 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:58:23.549 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /check_for_differences_on_standby_tanks/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3c460>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:58:33.554 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:58', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:58:33.558 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /new_inventory/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3c820>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:58:43.565 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:58:43.569 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /clean_inventories/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3faf0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:58:53.580 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:58', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:58:53.584 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /new_inventory/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108cdf910>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:59:03.591 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:59:03.594 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /check_for_differences_on_standby_tanks/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3cbe0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:59:13.606 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:59', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:59:13.609 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /new_inventory/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3f280>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:59:33.625 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:59', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:59:33.629 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /new_inventory/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3dba0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:59:43.637 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:59:43.640 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /check_for_differences_on_standby_tanks/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108cdee90>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:59:43.641 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 18:59:43.643 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /clean_inventories/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108cddd80>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 18:59:53.653 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '18:59', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 18:59:53.656 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /new_inventory/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3f010>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 19:00:13.672 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '19:00', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 19:00:13.676 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /new_inventory/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3cb80>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 19:00:23.680 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 19:00:23.684 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /check_for_differences_on_standby_tanks/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3cac0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 19:00:33.696 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '19:00', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 19:00:33.700 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /new_inventory/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108cddd20>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 19:00:43.769 DEBUG - Running job Job(interval=60, unit=seconds, do=check_db_size, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 19:00:43.778 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /clean_inventories/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108cdf970>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 19:00:53.790 DEBUG - rcv: {'host': '192.168.1.191', 'req_type': 'i201', 'date': '2023-01-18', 'time': '19:00', 'probe_number': 2, 'volume': 14330.0, 'tc_volume': 14330.0, 'ullage': 7661.0, 'height': 124.0509033203125, 'water': 1.3214111328125, 'temp': 15.0, 'delivery_in_progress': 0, 'depositoId': 2232, 'product_name': 'ETANOL'}
+2023-01-18 19:00:53.793 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /new_inventory/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3de70>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 19:01:03.803 DEBUG - Running job Job(interval=30, unit=seconds, do=check_for_diff, args=(), kwargs={'log': <RootLogger root (DEBUG)>})
+2023-01-18 19:01:03.806 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /check_for_differences_on_standby_tanks/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108d3c340>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-01-18 19:01:18.822 DEBUG - error - cant connect to host 192.168.1.122 - desc: timed out
+2023-01-18 19:01:18.823 WARNING - Trying to reconnect
+2023-01-18 19:01:23.827 WARNING - error - cant re-connect to host 192.168.1.122 - desc: timed out
+2023-02-09 12:11:31.302 INFO - ########TlS Reading Logger Started########
+2023-02-09 12:11:31.316 DEBUG - b'{"id":2,"host":"192.168.1.130","user":"HOCOMM","password":123456}'
+2023-02-09 12:11:36.319 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:11:36.320 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:11:36.320 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:11:46.328 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:11:46.328 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:11:46.331 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:11:46.332 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:11:56.340 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:11:56.341 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:11:56.341 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:11:56.342 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:12:06.350 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:12:06.350 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:12:06.351 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:12:06.351 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:12:16.356 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:12:16.357 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:12:16.357 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:12:16.357 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:12:26.362 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:12:26.362 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:12:26.363 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:12:26.363 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:12:36.373 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:12:36.373 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:12:36.374 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:12:36.374 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:12:42.607 INFO - ########TlS Reading Logger Started########
+2023-02-09 12:12:46.352 DEBUG - b'{"id":2,"host":"192.168.1.130","user":"HOCOMM","password":123456}'
+2023-02-09 12:12:51.358 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:12:51.359 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:12:51.359 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:13:01.369 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:13:01.370 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:13:01.371 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:13:01.371 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:13:11.380 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:13:11.381 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:13:11.381 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:13:11.381 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:13:21.391 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:13:21.392 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:13:21.392 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:13:21.392 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:13:31.400 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:13:31.401 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:13:31.402 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:13:31.402 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:13:41.407 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:13:41.408 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:13:41.408 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:13:41.408 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:13:51.414 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:13:51.414 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:13:51.415 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:13:51.415 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:14:01.425 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:14:01.425 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:14:01.425 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:14:01.426 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:14:11.432 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:14:11.433 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:14:11.433 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:14:11.434 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:14:21.440 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:14:21.441 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:14:21.441 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:14:21.441 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:14:26.450 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /get_siteomat_config/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1049d9180>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-02-09 12:14:26.451 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:14:26.451 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:14:26.452 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:14:31.458 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /get_siteomat_config/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1049d98d0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-02-09 12:14:31.459 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:14:31.459 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:14:31.460 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:14:36.464 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /get_siteomat_config/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1049da140>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-02-09 12:14:36.465 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:14:36.465 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:14:36.465 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:14:41.471 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /get_siteomat_config/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1049dbbb0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-02-09 12:14:41.471 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:14:41.471 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:14:41.472 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:14:46.477 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /get_siteomat_config/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1049dbac0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-02-09 12:14:46.477 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:14:46.478 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:14:46.478 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:14:51.483 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /get_siteomat_config/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1049da2c0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-02-09 12:14:51.484 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:14:51.484 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:14:51.484 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:14:56.488 WARNING - HTTPConnectionPool(host='localhost', port=5557): Max retries exceeded with url: /get_siteomat_config/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1049d9780>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2023-02-09 12:14:56.488 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:14:56.489 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:14:56.489 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:15:01.495 DEBUG - b'{"id":2,"host":"192.168.1.130","user":"HOCOMM","password":123456}'
+2023-02-09 12:15:07.179 INFO - ########TlS Reading Logger Started########
+2023-02-09 12:15:12.190 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:15:12.191 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:15:12.191 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:15:12.192 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:15:22.202 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:15:22.203 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:15:22.203 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:15:22.204 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:15:32.213 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:15:32.214 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:15:32.214 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:15:32.215 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:15:42.220 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:15:42.221 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:15:42.222 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:15:42.222 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:15:52.230 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:15:52.231 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:15:52.232 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:15:52.232 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:16:00.072 INFO - ########TlS Reading Logger Started########
+2023-02-09 12:16:05.084 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:16:05.084 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:16:05.085 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:16:05.085 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:16:15.095 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:16:15.095 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:16:15.096 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:16:15.096 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:16:20.105 DEBUG - b'{"id":2,"host":"192.168.1.130","user":"HOCOMM","password":123456}'
+2023-02-09 12:16:25.109 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:16:25.109 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:16:25.110 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:21:19.834 INFO - ########TlS Reading Logger Started########
+2023-02-09 12:21:19.846 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:21:19.850 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:21:19.854 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:21:20.020 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"YGJtj3RVXPGWwHO2GSidQdHS9kMEVjYqS645URIXTAHoSgklN2RU","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:21:25.025 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:21:25.026 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:21:35.035 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:21:40.041 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:21:45.046 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:21:45.046 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:21:45.047 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:21:45.047 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:21:55.054 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:22:00.059 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:22:05.065 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:22:05.066 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:22:05.066 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:22:05.066 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:22:15.075 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:22:20.080 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:22:25.084 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:22:25.085 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:22:25.085 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:22:25.086 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:22:35.092 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:22:40.105 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:22:44.127 WARNING - ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+2023-02-09 12:22:44.127 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:22:44.127 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:22:44.128 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:22:50.140 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:22:50.145 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:22:50.150 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:22:50.327 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"NP4j9NjyjaEzsAUu/SIQTi1NuUEMUueL0OLK3v.CPVZqtOcQUVP2","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:22:50.638 DEBUG - {'quantity': 2}
+2023-02-09 12:22:50.642 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:22:50.823 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"YU6V0foe9Y7D2HIsUcO1nxZJVEOR9.DP350uCmEDEUMvUJrRjixo","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:22:51.059 DEBUG - Pump:1{'pump_status': '55', 'rc': '0', 'rc_desc': 'Ok'}
+2023-02-09 12:22:56.065 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:23:01.071 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:23:01.072 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:23:01.072 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:23:11.085 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:23:16.091 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:23:21.096 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:23:21.097 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:23:21.097 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:23:21.098 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:23:31.105 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:23:36.110 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:23:41.114 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:23:41.115 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:23:41.115 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:23:41.115 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:23:51.125 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:23:56.129 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:24:01.134 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:24:01.134 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:24:01.135 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:24:01.135 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:24:06.143 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:24:06.147 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:24:06.151 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:24:06.324 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"WTVIb0xRqHMzMTCZDIYUFcAbVEFA1FGJmHf9fwYVE6EoWWZdTh02","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:24:06.582 DEBUG - {'quantity': 2}
+2023-02-09 12:24:06.587 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:24:06.740 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"HCbaMulE4mQ0ETTcwFywQc61SMGQmtk4dlzZlTINUo2CyhTB35VQ","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:24:06.999 DEBUG - Pump:1{'pump_status': '55', 'rc': '0', 'rc_desc': 'Ok'}
+2023-02-09 12:24:07.004 DEBUG - Pump:1 code:55 None
+2023-02-09 12:24:07.008 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:24:07.207 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"GNT5yc2CcFV/cPKyl.6GehCYgoZSbOsdvqLIxNAAX3YY810QOU2Y","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:24:07.598 DEBUG - Pump:2{'pump_status': '55', 'rc': '0', 'rc_desc': 'Ok'}
+2023-02-09 12:24:12.603 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:24:22.614 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:24:27.619 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:24:32.624 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:24:32.625 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:24:32.625 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:24:32.626 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:24:42.633 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:24:47.638 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:24:52.643 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:24:52.644 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:24:52.644 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:24:52.645 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:25:02.652 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:25:07.657 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:25:12.661 WARNING - HTTPConnectionPool(host='localhost', port=5557): Read timed out. (read timeout=5)
+2023-02-09 12:25:12.661 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:25:12.661 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:25:12.662 WARNING - 'NoneType' object is not subscriptable
+2023-02-09 12:25:22.618 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:25:22.624 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:25:22.630 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:25:22.800 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"MHIgPjiTMFeCEGBqv69/vD7xuQZJL2Ey3gbdCAYFVKELJEBss//6","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:25:23.079 DEBUG - {'quantity': 2}
+2023-02-09 12:25:23.109 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:25:23.330 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"CZDpN10VCcr16YIgUDcy.JxSpwZTwkxp8VA1w3INHv0/YrLuVDQc","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:25:23.685 DEBUG - Pump:1{'pump_status': '55', 'rc': '0', 'rc_desc': 'Ok'}
+2023-02-09 12:25:23.691 DEBUG - Pump:1 code:55 None
+2023-02-09 12:25:23.695 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:25:23.892 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"WGx8Ia7hRJcfcBD4ME8HBMqKv2XOmY6iWAW1AToXEFd.0q6ASnL6","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:25:24.299 DEBUG - Pump:2{'pump_status': '55', 'rc': '0', 'rc_desc': 'Ok'}
+2023-02-09 12:25:24.304 DEBUG - Pump:2 code:55 None
+2023-02-09 12:25:29.310 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:25:29.314 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:25:29.319 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:25:29.492 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"CMrzvJ0rGjaDgPBzd9vRYe7GlUEPR/JzH.1VFwQZRDFyTLfn65/U","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:25:29.699 DEBUG - {'quantity': 2}
+2023-02-09 12:25:29.703 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:25:29.853 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"XFtWJt.frqYckSXkHOsHsh2JV6PX.7/bHnmXlOQSSGmt6WJbdHLk","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:25:30.161 DEBUG - Pump:1{'pump_status': '55', 'rc': '0', 'rc_desc': 'Ok'}
+2023-02-09 12:25:30.166 DEBUG - Pump:1 code:55 None
+2023-02-09 12:25:30.171 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:25:30.319 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"XRPwbNAZPq7k.AXP9K/edfs4UAKO0yhQQGdT4AMEGmNnYTY2RTzk","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:25:30.660 DEBUG - Pump:2{'pump_status': '55', 'rc': '0', 'rc_desc': 'Ok'}
+2023-02-09 12:25:30.665 DEBUG - Pump:2 code:55 None
+2023-02-09 12:25:35.670 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:25:35.675 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:25:35.679 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:25:35.900 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"UG..8QI/k82VUJRi2EibmXNtHsUH3v1unCLw4KYWWBaUZm51Tpk2","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:25:36.115 DEBUG - {'quantity': 2}
+2023-02-09 12:25:36.119 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:25:36.272 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"TLeOSaIK8446QYYGDHlVbWwh32AXP9K/edfs4UAQY.9Hq3NTi5ko","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:25:36.582 DEBUG - Pump:1{'pump_status': '55', 'rc': '0', 'rc_desc': 'Ok'}
+2023-02-09 12:25:36.587 DEBUG - Pump:1 code:55 None
+2023-02-09 12:25:36.591 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:25:36.791 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"DInKOmkAAU4qcVSc2aJkZP2/aYGOHUbnPSKqMKIKDjXD98Y3DtJk","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:25:37.203 DEBUG - Pump:2{'pump_status': '55', 'rc': '0', 'rc_desc': 'Ok'}
+2023-02-09 12:25:37.208 DEBUG - Pump:2 code:55 None
+2023-02-09 12:25:42.218 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:25:42.222 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:25:42.227 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:25:42.409 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"GLWWIrnNiAnJMAQ5wDeKXLfn7AZFJiAHAi8dfg6XUkcYaLs/gYLU","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:25:42.627 DEBUG - {'quantity': 2}
+2023-02-09 12:25:42.633 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:25:42.783 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"LHu3xyYgEyZnQMGRTYM/fJYnoEOIbCPuTWpl1VUDInKOmkAAU4qc","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:25:43.191 DEBUG - Pump:1{'pump_status': '55', 'rc': '0', 'rc_desc': 'Ok'}
+2023-02-09 12:25:43.196 DEBUG - Pump:1 code:55 None
+2023-02-09 12:25:43.200 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:25:43.405 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"TBklgu91c8442GUDfnlviMwZ4oZXtc6C1K.yNqETDMhd74vAGN8o","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:25:43.960 DEBUG - Pump:2{'pump_status': '55', 'rc': '0', 'rc_desc': 'Ok'}
+2023-02-09 12:25:43.967 DEBUG - Pump:2 code:55 None
+2023-02-09 12:25:48.975 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:25:48.979 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:25:48.984 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:25:49.175 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"FOGuWTN8eQ9q6WMeqTv5E0GzsEDHULvC1DH3LgEQJdck/OKLvQF.","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:25:49.400 DEBUG - {'quantity': 2}
+2023-02-09 12:25:49.405 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:25:49.574 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"SRfeTzOehVS1QAS6sJRmMqcpSYWXknm1liJVp7YMICCb7krOlyjo","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:25:49.902 DEBUG - Pump:1{'pump_status': '55', 'rc': '0', 'rc_desc': 'Ok'}
+2023-02-09 12:25:49.907 DEBUG - Pump:1 code:55 None
+2023-02-09 12:25:49.911 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:25:50.078 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"EY8qCpCqMzuXwOTZHx78fF0b86HSBrxPady6QH.BArM/iohislm2","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:25:50.521 DEBUG - Pump:2{'pump_status': '55', 'rc': '0', 'rc_desc': 'Ok'}
+2023-02-09 12:25:50.526 DEBUG - Pump:2 code:55 None
+2023-02-09 12:25:55.536 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:25:55.540 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:25:55.545 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:25:55.683 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"TIKCGBYcirx6EUTTFZptZDI3C2FNqfTHrLEI7GIXL4JG97TEx4q.","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:25:55.890 DEBUG - {'quantity': 2}
+2023-02-09 12:25:55.895 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:25:56.049 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"CToUkAvsbr13sXG9Rt5oIhTRLwAOc6OOf.R3ZuAQTgRVsohcWwTw","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:25:56.459 DEBUG - Pump:1{'pump_status': '55', 'rc': '0', 'rc_desc': 'Ok'}
+2023-02-09 12:25:56.464 DEBUG - Pump:1 code:55 None
+2023-02-09 12:25:56.469 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:25:56.724 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"FRHeRVFicYvIcLBXZrW7iUuKLMPYqOq/RcMGvcUJUL7mBFSWonBY","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:25:56.981 DEBUG - Pump:2{'pump_status': '55', 'rc': '0', 'rc_desc': 'Ok'}
+2023-02-09 12:25:56.986 DEBUG - Pump:2 code:55 None
+2023-02-09 12:26:01.993 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:26:01.998 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:26:02.002 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:26:02.140 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"XYX5qdYFY72Y.NEHdHftNKHrdEQOaXN66eNBSDwFKBtjWVTnzfKQ","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:26:02.350 DEBUG - {'quantity': 2}
+2023-02-09 12:26:02.354 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:26:02.508 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"WZOyKDFQlrQ5wECtao9p00m03cNBT.00xXbAZTgNQTDm6756JG9k","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:26:02.836 DEBUG - Pump:1{'pump_status': '55', 'rc': '0', 'rc_desc': 'Ok'}
+2023-02-09 12:26:02.840 DEBUG - Pump:1 code:55 None
+2023-02-09 12:26:02.845 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:26:03.020 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"VLMP33MBswJskXVH0z5yN0QBcIZODzCCs3gY452PETE90FVCx1s.","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:26:03.417 DEBUG - Pump:2{'pump_status': '55', 'rc': '0', 'rc_desc': 'Ok'}
+2023-02-09 12:26:03.422 DEBUG - Pump:2 code:55 None
+2023-02-09 12:26:08.429 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:26:08.434 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:26:08.439 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:26:08.579 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"GAbjjw.AfTFDwGV5Y6zpUaAXrEZQTlnOqkHVZ/UPWbLz6hR6JQUc","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:26:08.824 DEBUG - {'quantity': 2}
+2023-02-09 12:26:08.867 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:26:09.033 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"PCyNq4be3cXu2BGJ9MW1lFhLgARGJyWmUOcnVZ.QOaXN66eNBSDw","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:26:09.378 DEBUG - Pump:1{'pump_status': '55', 'rc': '0', 'rc_desc': 'Ok'}
+2023-02-09 12:26:09.384 DEBUG - Pump:1 code:55 None
+2023-02-09 12:26:09.388 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:26:09.534 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"GV5Y6zpUaAXrEQU1F3aYnXxH0wXEFd.0q6ASnL6KSdAal3u9lFzI","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:26:09.868 DEBUG - Pump:2{'pump_status': '55', 'rc': '0', 'rc_desc': 'Ok'}
+2023-02-09 12:26:09.872 DEBUG - Pump:2 code:55 None
+2023-02-09 12:26:14.883 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:26:14.887 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:26:14.891 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:26:15.077 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"QIgNBa5qi4PlINPs6E2I/Pgng2XDC9RsEUxdgR6UD8z3FEcTjcQ6","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:26:15.336 DEBUG - {'quantity': 2}
+2023-02-09 12:26:15.340 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:26:15.492 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"DBNBzeDrALCPYYDOsYTZ0LtCWIROS6xt1gVzsH2ZHyykWXsDqekA","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:26:15.750 DEBUG - Pump:1{'pump_status': '55', 'rc': '0', 'rc_desc': 'Ok'}
+2023-02-09 12:26:15.755 DEBUG - Pump:1 code:55 None
+2023-02-09 12:26:15.759 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:26:15.906 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"RB79PVK5/q00wNIe9jntNA1IoYHEXdfkgBGlJ..XNnfaOZRMCEsA","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:26:16.163 DEBUG - Pump:2{'pump_status': '55', 'rc': '0', 'rc_desc': 'Ok'}
+2023-02-09 12:26:16.168 DEBUG - Pump:2 code:55 None
+2023-02-09 12:26:21.176 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:26:21.180 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:26:21.184 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:26:21.328 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"ZNLAKBXUvW4ckHWh2htjaIxLW.SSlVWQiEWPK7MPIAZ76COrUL2M","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:26:21.547 DEBUG - {'quantity': 2}
+2023-02-09 12:26:21.552 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:26:21.704 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"AD7wfwyoFb8O2YYBKOBOyou596GSaVaEojWl6ewBK6n4jGWPOxd6","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:26:21.960 DEBUG - Pump:1{'pump_status': '55', 'rc': '0', 'rc_desc': 'Ok'}
+2023-02-09 12:26:21.965 DEBUG - Pump:1 code:55 None
+2023-02-09 12:26:21.969 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:26:22.118 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"UA3NVroVFcL/UNMpPZNgdWoeV2ONhN9V8kWngIUTFIpS409xSvkQ","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:26:22.489 DEBUG - Pump:2{'pump_status': '55', 'rc': '0', 'rc_desc': 'Ok'}
+2023-02-09 12:26:22.494 DEBUG - Pump:2 code:55 None
+2023-02-09 12:26:27.502 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:26:27.507 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:26:27.510 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:26:27.604 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"OGGvMg48VxwscOVvhad0VcvL2ILLGPe7eI5lc.cJKo7L.RGHJsHY","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:26:27.818 DEBUG - {'quantity': 2}
+2023-02-09 12:26:27.823 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:26:27.974 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"ZQlaZDi7jII4YHRTOp5pC28iToIXVgOEvpEarcwZJonOonTojdpc","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:26:28.233 DEBUG - Pump:1{'pump_status': '55', 'rc': '0', 'rc_desc': 'Ok'}
+2023-02-09 12:26:28.238 DEBUG - Pump:1 code:55 None
+2023-02-09 12:26:28.243 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:26:28.440 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"AXzKrLTXYbQWgHG6LARX.YiFosQJg84gcWxerFIQL4z5qc48unl2","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:26:28.813 DEBUG - Pump:2{'pump_status': '55', 'rc': '0', 'rc_desc': 'Ok'}
+2023-02-09 12:26:28.818 DEBUG - Pump:2 code:55 None
+2023-02-09 12:26:33.825 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:26:33.829 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:26:33.834 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:26:34.050 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"JDQ0CNA5rXac2XXBiFopk27vTYRQFItvEboAJRQDFZcXozu4LScA","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:26:34.279 DEBUG - {'quantity': 2}
+2023-02-09 12:26:34.284 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:26:34.435 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"XRy2ogccwvvvEBIPhrW0jMZLfQCKcLXLgKyrAVgTCsXvB9z4ylXg","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:26:34.761 DEBUG - Pump:1{'pump_status': '55', 'rc': '0', 'rc_desc': 'Ok'}
+2023-02-09 12:26:34.766 DEBUG - Pump:1 code:55 None
+2023-02-09 12:26:34.770 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:26:34.933 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"ABx7heCMEwd0UTJ1D8z3f5qUZUYT4uWlikJLyE6TYE2ItR4H7UHg","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:26:35.263 DEBUG - Pump:2{'pump_status': '55', 'rc': '0', 'rc_desc': 'Ok'}
+2023-02-09 12:26:35.268 DEBUG - Pump:2 code:55 None
+2023-02-09 12:26:40.276 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:26:40.280 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:26:40.285 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:26:40.508 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"RBoT4qHy7tRNoEINsH4I1TuHewKV5601opfG0CYTUxxyo.oNU2oE","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:26:41.002 DEBUG - {'quantity': 2}
+2023-02-09 12:26:41.007 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:26:41.206 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"YQozsHm1xOW7kSQqf40I3Fttk.GVdbSSu4ompzMVEF0tyclR3n1U","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:26:41.464 DEBUG - Pump:1{'pump_status': '55', 'rc': '0', 'rc_desc': 'Ok'}
+2023-02-09 12:26:41.469 DEBUG - Pump:1 code:55 None
+2023-02-09 12:26:41.474 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:26:41.634 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"NXfu04AeqK1WEMQpLd7ZIzDDmkHFAwqDlNEy1a.SIMIdhZinKIbk","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:26:42.023 DEBUG - Pump:2{'pump_status': '55', 'rc': '0', 'rc_desc': 'Ok'}
+2023-02-09 12:26:42.028 DEBUG - Pump:2 code:55 None
+2023-02-09 12:26:47.036 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:26:47.040 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:26:47.045 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:26:47.239 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"GLCEew.OEIR7kRFN3CWSjWxOfQFLymW248a3a0QDWO6NTUOaSyrA","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:26:47.456 DEBUG - {'quantity': 2}
+2023-02-09 12:26:47.460 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:26:47.613 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"MHP6pZrX2IZM6EXtCYwKdc.t1oDX.N3.EwJuv1USBPiwCXPS82Vg","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:26:47.978 DEBUG - Pump:1{'pump_status': '55', 'rc': '0', 'rc_desc': 'Ok'}
+2023-02-09 12:26:47.982 DEBUG - Pump:1 code:55 None
+2023-02-09 12:26:47.986 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:26:48.134 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"OKIN/WL5qDYJcSVC9AMKzmuqn2GOu4j.kdty/ksZUtmCzRraGwZ6","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:26:48.578 DEBUG - Pump:2{'pump_status': '55', 'rc': '0', 'rc_desc': 'Ok'}
+2023-02-09 12:26:48.583 DEBUG - Pump:2 code:55 None
+2023-02-09 12:26:53.593 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:26:53.598 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:26:53.602 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:26:53.791 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"LLGPe7eI5lc.cKSYSO4NQ1Oe62RCmBhWhE1AtewBXQRXYX3Nm322","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:26:54.050 DEBUG - {'quantity': 2}
+2023-02-09 12:26:54.055 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:26:54.206 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"OTJ4w8SQvxDGsDUpDqL1w0/dEIEGxeU7AWYcCqcQRkHkoyEAXi1o","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:26:54.465 DEBUG - Pump:1{'pump_status': '55', 'rc': '0', 'rc_desc': 'Ok'}
+2023-02-09 12:26:54.470 DEBUG - Pump:1 code:55 None
+2023-02-09 12:26:54.474 DEBUG - b'{"id":3,"host":"192.168.1.104","user":"HOCOMM","password":123456}'
+2023-02-09 12:26:54.671 DEBUG - b'{"rc":"0","rc_desc":"Ok","SessionID":"OVvhad0VcvL2IORwYdU1990W6QTGWAO.78jgFCwTHkCQ1xr8zYaU","Version":"7.2.26.3.192407","ChunkSizeLimit":"2500"}'
+2023-02-09 12:26:55.132 DEBUG - Pump:2{'pump_status': '55', 'rc': '0', 'rc_desc': 'Ok'}
+2023-02-09 12:26:55.137 DEBUG - Pump:2 code:55 None
