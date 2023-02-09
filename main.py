@@ -174,7 +174,7 @@ async def so_login(data: SOLogin):
         </soap:Envelope>'''
     response = requests.post(f'https://{data.so_url}/SiteOmatService/SiteOmatService.asmx', data=xml, headers={'Content-Type': 'application/xml'}, verify=False)
     #print(json.dumps(xmltodict.parse(response.content)["soap:Envelope"]["soap:Body"]["SOLoginResponse"]["SOLoginResult"]))
-    data = await json.dumps(xmltodict.parse(response.content)["soap:Envelope"]["soap:Body"]["SOLoginResponse"]["SOLoginResult"])
+    data = json.dumps(xmltodict.parse(response.content)["soap:Envelope"]["soap:Body"]["SOLoginResponse"]["SOLoginResult"])
     return json.loads(data)
 
 @app.post("/so_get_pump_status/", response_class=ORJSONResponse, status_code=200)
@@ -193,7 +193,7 @@ async def so_get_pump_status(data: SOGetPumpStatus):
     '''
     response = requests.post(f'https://{data.so_url}/SiteOmatService/SiteOmatService.asmx', data=xml, headers={'Content-Type': 'application/xml'}, verify=False)
     #print(json.dumps(xmltodict.parse(response.content)["soap:Envelope"]["soap:Body"]["SOGetPumpStatusResponse"]["SOGetPumpStatusResult"]))
-    data = await json.dumps(xmltodict.parse(response.content)["soap:Envelope"]["soap:Body"]["SOGetPumpStatusResponse"]["SOGetPumpStatusResult"])
+    data = json.dumps(xmltodict.parse(response.content)["soap:Envelope"]["soap:Body"]["SOGetPumpStatusResponse"]["SOGetPumpStatusResult"])
     return json.loads(data)
 
 @app.post("/so_get_pump_quantity/", response_class=ORJSONResponse, status_code=200)
