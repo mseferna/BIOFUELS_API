@@ -1,5 +1,5 @@
 
-from ast import Or
+
 from fastapi import FastAPI
 from fastapi.encoders import jsonable_encoder
 from fastapi.responses import JSONResponse
@@ -19,6 +19,7 @@ from entities.SOLogin import SOLogin
 from entities.SOGetPumpStatus import SOGetPumpStatus
 from entities.SOSimple import SOSimple
 from entities.PumpAlarm import PumpAlarm
+from entities.SiteOmat import SiteOmat
 import xmltodict
 from typing import List
 
@@ -159,7 +160,8 @@ async def calculate_accum_inventoriy_diff(initial_volume, last_volume):
     return float(initial_volume) - float(last_volume)
 
 @app.post("/so_login/", response_class=ORJSONResponse, status_code=200)
-async def so_login(data: SOLogin, so_url='10.28.139.140'):
+#async def so_login(data: SOLogin, so_url='10.28.139.140'):
+async def so_login(data: SOLogin):
     xml = f'''
         <?xml version="1.0" encoding="utf-8"?>
         <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
@@ -170,13 +172,13 @@ async def so_login(data: SOLogin, so_url='10.28.139.140'):
                 </SOLogin>
             </soap:Body>
         </soap:Envelope>'''
-    response = requests.post(f'https://{so_url}/SiteOmatService/SiteOmatService.asmx', data=xml, headers={'Content-Type': 'application/xml'}, verify=False)
+    response = requests.post(f'https://{data.so_url}/SiteOmatService/SiteOmatService.asmx', data=xml, headers={'Content-Type': 'application/xml'}, verify=False)
     #print(json.dumps(xmltodict.parse(response.content)["soap:Envelope"]["soap:Body"]["SOLoginResponse"]["SOLoginResult"]))
     data = json.dumps(xmltodict.parse(response.content)["soap:Envelope"]["soap:Body"]["SOLoginResponse"]["SOLoginResult"])
     return json.loads(data)
 
 @app.post("/so_get_pump_status/", response_class=ORJSONResponse, status_code=200)
-async def so_get_pump_status(data: SOGetPumpStatus, so_url='10.28.139.140'):
+async def so_get_pump_status(data: SOGetPumpStatus):
     xml = f'''
     <?xml version="1.0" encoding="utf-8"?>
         <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
@@ -189,13 +191,13 @@ async def so_get_pump_status(data: SOGetPumpStatus, so_url='10.28.139.140'):
         </soap:Body>
         </soap:Envelope>
     '''
-    response = requests.post(f'https://{so_url}/SiteOmatService/SiteOmatService.asmx', data=xml, headers={'Content-Type': 'application/xml'}, verify=False)
+    response = requests.post(f'https://{data.so_url}/SiteOmatService/SiteOmatService.asmx', data=xml, headers={'Content-Type': 'application/xml'}, verify=False)
     #print(json.dumps(xmltodict.parse(response.content)["soap:Envelope"]["soap:Body"]["SOGetPumpStatusResponse"]["SOGetPumpStatusResult"]))
     data = json.dumps(xmltodict.parse(response.content)["soap:Envelope"]["soap:Body"]["SOGetPumpStatusResponse"]["SOGetPumpStatusResult"])
     return json.loads(data)
 
 @app.post("/so_get_pump_quantity/", response_class=ORJSONResponse, status_code=200)
-async def so_get_pump_quantity(data: SOSimple, so_url='10.28.139.140'):
+async def so_get_pump_quantity(data: SOSimple):
     xml = f'''
         <?xml version="1.0" encoding="utf-8"?>
         <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
@@ -207,7 +209,7 @@ async def so_get_pump_quantity(data: SOSimple, so_url='10.28.139.140'):
         </soap:Body>
         </soap:Envelope>
     '''
-    response = requests.post(f'https://{so_url}/SiteOmatService/SiteOmatService.asmx', data=xml, headers={'Content-Type': 'application/xml'}, verify=False)
+    response = requests.post(f'https://{data.so_url}/SiteOmatService/SiteOmatService.asmx', data=xml, headers={'Content-Type': 'application/xml'}, verify=False)
     # print(len(xmltodict.parse(response.content)["soap:Envelope"]["soap:Body"]["SOGetWizardSetupDataResponse"]["SOGetWizardSetupDataResult"]["Pumps"]["Pump"]))
     # print(json.dumps(xmltodict.parse(response.content)["soap:Envelope"]["soap:Body"]["SOGetWizardSetupDataResponse"]["SOGetWizardSetupDataResult"]["Pumps"]["Pump"]))
     return ORJSONResponse({"quantity": len(xmltodict.parse(response.content)["soap:Envelope"]["soap:Body"]["SOGetWizardSetupDataResponse"]["SOGetWizardSetupDataResult"]["Pumps"]["Pump"])})
@@ -483,12 +485,28 @@ async def get_router_config():
         if data == (None, None, None, None): return ORJSONResponse({"response": False})
         return ORJSONResponse({"id": data[0], "host": data[1], "user": data[2], "password": data[3]}) 
 
+@app.get("/get_siteomat_config/", response_class=ORJSONResponse, status_code=200)
+async def get_siteomat_config():
+    cur = con.cursor()
+    result = cur.execute('SELECT max(id), host, user, password FROM siteomat_params')  
+    for data in result:
+        if data == (None, None, None, None): return ORJSONResponse({"response": False})
+        return ORJSONResponse({"id": data[0], "host": data[1], "user": data[2], "password": data[3]}) 
+
 
 @app.post("/create_router/", response_class=ORJSONResponse, status_code=200)
 async def create_router(data: Relay):
     cur = con.cursor()
     await create_router_params_table()
     cur.execute('INSERT INTO router_params ( host, user, password , created) VALUES (?, ?, ?, ?)', (data.host, data.user, data.password, data.created))
+    con.commit()
+    cur.close()
+    return {'response': True}
+
+@app.post("/create_siteomat/", response_class=ORJSONResponse, status_code=200)
+async def create_siteomat(data: SiteOmat):
+    cur = con.cursor()
+    cur.execute('INSERT INTO siteomat_params ( host, user, password , created) VALUES (?, ?, ?, ?)', (data.host, data.user, data.password, data.created))
     con.commit()
     cur.close()
     return {'response': True}

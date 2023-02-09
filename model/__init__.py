@@ -19,7 +19,7 @@ if __name__ == 'model':
     db_path = (os.path.dirname(os.path.realpath(__file__)) + '/DB/data.db').replace('/', '//')
     con = create_db(db_path)
     create_table(con, 'config', 'id INTEGER PRIMARY KEY AUTOINCREMENT, host TEXT, port INTEGER, deposito_id INTEGER, created TEXT')
-    create_table(con, 'siteomat', 'id INTEGER PRIMARY KEY AUTOINCREMENT, host TEXT, port INTEGER, password INTEGER, created TEXT')
+    create_table(con, 'siteomat_params', 'id INTEGER PRIMARY KEY AUTOINCREMENT, host TEXT, user TEXT, password INTEGER, created TEXT')
     create_table(con, 'inventories', 
                     '''id INTEGER PRIMARY KEY AUTOINCREMENT, 
                     host TEXT, 

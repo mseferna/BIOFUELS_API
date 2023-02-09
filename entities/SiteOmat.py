@@ -4,7 +4,8 @@ from datetime import datetime
 
 now = datetime.now()
 
-class SOLogin(BaseModel):
-    so_url: str
-    user: str 
+class SiteOmat(BaseModel):
+    host: str 
+    user: str
     password: str
+    created: Optional[str]=now.strftime('%Y/%m/%d %H:%M:%S')
