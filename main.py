@@ -40,7 +40,7 @@ async def relay_state(state: str):
     result = cur.execute('SELECT max(id), host, user, password FROM router_params')  
     for data in result:
         try:
-            r = requests.get(f'http://{data[1]}/cgi-bin/io_state?username={data[2]}&password={data[3]}&pin=relay0&state={state}')
+            r = requests.get(f'http://{data[1]}/cgi-bin/io_state?username={data[2]}&password={data[3]}&pin=relay0&state={state}', timeout=3)
             return {"response": r.content}
         except:
             return ORJSONResponse({"response": False})
