@@ -172,7 +172,7 @@ async def so_login(data: SOLogin):
                 </SOLogin>
             </soap:Body>
         </soap:Envelope>'''
-    response = await requests.post(f'https://{data.so_url}/SiteOmatService/SiteOmatService.asmx', data=xml, headers={'Content-Type': 'application/xml'}, verify=False)
+    response = requests.post(f'https://{data.so_url}/SiteOmatService/SiteOmatService.asmx', data=xml, headers={'Content-Type': 'application/xml'}, verify=False)
     #print(json.dumps(xmltodict.parse(response.content)["soap:Envelope"]["soap:Body"]["SOLoginResponse"]["SOLoginResult"]))
     data = await json.dumps(xmltodict.parse(response.content)["soap:Envelope"]["soap:Body"]["SOLoginResponse"]["SOLoginResult"])
     return json.loads(data)
@@ -191,7 +191,7 @@ async def so_get_pump_status(data: SOGetPumpStatus):
         </soap:Body>
         </soap:Envelope>
     '''
-    response = await requests.post(f'https://{data.so_url}/SiteOmatService/SiteOmatService.asmx', data=xml, headers={'Content-Type': 'application/xml'}, verify=False)
+    response = requests.post(f'https://{data.so_url}/SiteOmatService/SiteOmatService.asmx', data=xml, headers={'Content-Type': 'application/xml'}, verify=False)
     #print(json.dumps(xmltodict.parse(response.content)["soap:Envelope"]["soap:Body"]["SOGetPumpStatusResponse"]["SOGetPumpStatusResult"]))
     data = await json.dumps(xmltodict.parse(response.content)["soap:Envelope"]["soap:Body"]["SOGetPumpStatusResponse"]["SOGetPumpStatusResult"])
     return json.loads(data)
@@ -209,7 +209,7 @@ async def so_get_pump_quantity(data: SOSimple):
         </soap:Body>
         </soap:Envelope>
     '''
-    response = await requests.post(f'https://{data.so_url}/SiteOmatService/SiteOmatService.asmx', data=xml, headers={'Content-Type': 'application/xml'}, verify=False)
+    response = requests.post(f'https://{data.so_url}/SiteOmatService/SiteOmatService.asmx', data=xml, headers={'Content-Type': 'application/xml'}, verify=False)
     # print(len(xmltodict.parse(response.content)["soap:Envelope"]["soap:Body"]["SOGetWizardSetupDataResponse"]["SOGetWizardSetupDataResult"]["Pumps"]["Pump"]))
     # print(json.dumps(xmltodict.parse(response.content)["soap:Envelope"]["soap:Body"]["SOGetWizardSetupDataResponse"]["SOGetWizardSetupDataResult"]["Pumps"]["Pump"]))
     return ORJSONResponse({"quantity": len(xmltodict.parse(response.content)["soap:Envelope"]["soap:Body"]["SOGetWizardSetupDataResponse"]["SOGetWizardSetupDataResult"]["Pumps"]["Pump"])})
