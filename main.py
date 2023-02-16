@@ -228,7 +228,8 @@ async def analize_diff_postos(diff):
 
     if diff == 0.0:
         return ORJSONResponse({"response": "No differences"})    
-    
+
+
     # when fuel delivery is performed
     if diff < 0.0:
         print("diff es menor a 0")
@@ -378,6 +379,10 @@ async def analize_diff(diff, tank):
     # if diff < 0:
     #     print("diff es menor a 0")
     #     return await set_tank_updated_now(tank["id"])
+    if diff > 0.0 and diff < tank["threshold"]:
+        set_tank_updated_now(tank["id"])
+        return {"response": "Diff is positive but allowed (Tank movement?, temperature?))"}
+    
     if diff < 0:
         set_tank_updated_now(tank["id"])
         return {"response": "Diff is negative (fuel delivery maybe?))"}
